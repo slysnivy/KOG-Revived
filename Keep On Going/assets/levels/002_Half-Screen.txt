@@ -1,0 +1,3384 @@
+Hallway(14, 332, 1)
+
+dsnclass.Text("Hallway", (660, 385), 45, "impact", WHITE, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [0, 288, 1100, 20]),
+        pygame.draw.rect(screen, BLACK, [0, 348, 1100, 20]),
+        pygame.draw.rect(screen, BLACK, [1070, 0, 10, 308]),
+        pygame.draw.rect(screen, BLACK, [1070, 348, 10, 250]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 10, 576]),
+        pygame.draw.rect(screen, DARK_RED, [705, 212, 10, 10]),
+        pygame.draw.rect(screen, DARK_RED, [705, 231, 11, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 1080, 31]),
+        pygame.draw.rect(screen, BLACK, [0, 545, 1080, 31])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, LIME_GREEN, [174, 222, 577, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [734, 212, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [725, 202, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [715, 192, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [705, 182, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [734, 231, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [726, 241, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [717, 251, 10, 10]),
+        pygame.draw.rect(screen, LIME_GREEN, [708, 260, 10, 10]),
+        pygame.draw.rect(screen, BLACK, [725, 231, 10, 10]),
+        pygame.draw.rect(screen, BLACK, [725, 212, 10, 10]),
+        pygame.draw.rect(screen, BLACK, [715, 202, 10, 10]),
+        pygame.draw.rect(screen, BLACK, [705, 192, 10, 10]),
+        pygame.draw.rect(screen, BLACK, [708, 250, 10, 10]),
+        pygame.draw.rect(screen, BLUE, [715, 212, 10, 10]),
+        pygame.draw.rect(screen, BLUE, [716, 231, 10, 10]),
+        pygame.draw.rect(screen, BLUE, [707, 240, 10, 10]),
+        pygame.draw.rect(screen, BLUE, [705, 202, 10, 10]),
+        pygame.draw.rect(screen, BLACK, [717, 240, 10, 12]),
+        pygame.draw.rect(screen, BLACK, [96, 0, 92, 158]),
+        pygame.draw.rect(screen, BLACK, [73, 0, 23, 137]),
+        pygame.draw.rect(screen, BLACK, [187, 0, 23, 137]),
+        pygame.draw.rect(screen, BLACK, [50, 0, 23, 101]),
+        pygame.draw.rect(screen, BLACK, [112, 125, 23, 101]),
+        pygame.draw.rect(screen, BLACK, [135, 153, 23, 101]),
+        pygame.draw.rect(screen, BLACK, [157, 119, 23, 101]),
+        pygame.draw.rect(screen, BLACK, [209, 0, 23, 101]),
+        pygame.draw.rect(screen, BLACK, [863, 0, 23, 101]),
+        pygame.draw.rect(screen, BLACK, [885, 0, 23, 165]),
+        pygame.draw.rect(screen, BLACK, [907, 0, 23, 208]),
+        pygame.draw.rect(screen, BLACK, [928, 0, 23, 167]),
+        pygame.draw.rect(screen, BLACK, [950, 0, 23, 100]),
+        pygame.draw.rect(screen, BLACK, [971, 0, 23, 73]),
+        pygame.draw.rect(screen, BLACK, [938, 65, 23, 73]),
+        pygame.draw.rect(screen, BLACK, [874, 65, 23, 73]),
+        pygame.draw.rect(screen, BLACK, [575, 37, 289, 46]),
+        pygame.draw.rect(screen, BLACK, [187, 116, 700, 23]),
+        pygame.draw.rect(screen, BLACK, [283, 28, 125, 101]),
+        pygame.draw.rect(screen, BLACK, [573, 25, 125, 101]),
+        pygame.draw.rect(screen, BLACK, [727, 66, 125, 60]),
+        pygame.draw.rect(screen, BLACK, [389, 83, 212, 9]),
+        pygame.draw.rect(screen, BLACK, [431, 27, 125, 60]),
+        pygame.draw.rect(screen, BLACK, [1037, 22, 10, 275]),
+        pygame.draw.rect(screen, BLACK, [1037, 361, 10, 207]),
+        pygame.draw.rect(screen, BLACK, [31, 361, 10, 207]),
+        pygame.draw.rect(screen, BLACK, [31, 25, 10, 269]),
+        pygame.draw.rect(screen, BLACK, [5, 114, 28, 86]),
+        pygame.draw.rect(screen, BLACK, [1044, 14, 28, 86]),
+        pygame.draw.rect(screen, BLACK, [1044, 204, 28, 86]),
+        pygame.draw.rect(screen, BLACK, [1044, 386, 28, 59]),
+        pygame.draw.rect(screen, BLACK, [1044, 474, 28, 59]),
+        pygame.draw.rect(screen, BLACK, [8, 387, 25, 29]),
+        pygame.draw.rect(screen, BLACK, [8, 440, 25, 29]),
+        pygame.draw.rect(screen, BLACK, [8, 493, 25, 29]),
+        pygame.draw.rect(screen, BLACK, [872, 226, 178, 70]),
+        pygame.draw.rect(screen, BLACK, [155, 273, 812, 15]),
+        pygame.draw.rect(screen, BLACK, [183, 254, 494, 20]),
+        pygame.draw.rect(screen, BLACK, [754, 240, 181, 37]),
+        pygame.draw.rect(screen, BLACK, [915, 459, 42, 93]),
+        pygame.draw.rect(screen, BLACK, [898, 483, 22, 93]),
+        pygame.draw.rect(screen, BLACK, [952, 483, 22, 93]),
+        pygame.draw.rect(screen, BLACK, [933, 401, 8, 93]),
+        pygame.draw.rect(screen, BLACK, [887, 511, 15, 63]),
+        pygame.draw.rect(screen, BLACK, [970, 511, 15, 63]),
+        pygame.draw.rect(screen, BLACK, [87, 511, 15, 63]),
+        pygame.draw.rect(screen, BLACK, [208, 511, 15, 63]),
+        pygame.draw.rect(screen, BLACK, [186, 488, 26, 63]),
+        pygame.draw.rect(screen, BLACK, [99, 488, 26, 63]),
+        pygame.draw.rect(screen, BLACK, [123, 439, 26, 124]),
+        pygame.draw.rect(screen, BLACK, [169, 439, 26, 124]),
+        pygame.draw.rect(screen, BLACK, [146, 408, 26, 143]),
+        pygame.draw.rect(screen, BLACK, [156, 365, 8, 143]),
+        pygame.draw.rect(screen, BLACK, [255, 363, 4, 30]),
+        pygame.draw.rect(screen, BLACK, [543, 363, 4, 63]),
+        pygame.draw.rect(screen, BLACK, [532, 363, 4, 56]),
+        pygame.draw.rect(screen, BLACK, [523, 363, 4, 46]),
+        pygame.draw.rect(screen, BLACK, [514, 363, 4, 37]),
+        pygame.draw.rect(screen, BLACK, [503, 363, 4, 31]),
+        pygame.draw.rect(screen, BLACK, [492, 363, 4, 31]),
+        pygame.draw.rect(screen, BLACK, [481, 363, 4, 31]),
+        pygame.draw.rect(screen, BLACK, [459, 363, 4, 51]),
+        pygame.draw.rect(screen, BLACK, [448, 363, 4, 60]),
+        pygame.draw.rect(screen, BLACK, [438, 363, 4, 68]),
+        pygame.draw.rect(screen, BLACK, [470, 363, 4, 39]),
+        pygame.draw.rect(screen, BLACK, [429, 363, 4, 60]),
+        pygame.draw.rect(screen, BLACK, [418, 363, 4, 48]),
+        pygame.draw.rect(screen, BLACK, [407, 363, 4, 40]),
+        pygame.draw.rect(screen, BLACK, [395, 363, 4, 29]),
+        pygame.draw.rect(screen, BLACK, [360, 363, 29, 200]),
+        pygame.draw.rect(screen, BLACK, [556, 363, 199, 52]),
+        pygame.draw.rect(screen, BLACK, [381, 503, 199, 24]),
+        pygame.draw.rect(screen, BLACK, [381, 452, 199, 24]),
+        pygame.draw.rect(screen, BLACK, [561, 452, 15, 118]),
+        pygame.draw.rect(screen, BLACK, [545, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [532, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [520, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [507, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [494, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [480, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [467, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [452, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [437, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [425, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [411, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [399, 452, 8, 118]),
+        pygame.draw.rect(screen, BLACK, [390, 452, 6, 118]),
+        pygame.draw.rect(screen, BLACK, [643, 452, 6, 110]),
+        pygame.draw.rect(screen, BLACK, [578, 452, 72, 9]),
+        pygame.draw.rect(screen, BLACK, [578, 508, 72, 9]),
+        pygame.draw.rect(screen, BLACK, [593, 455, 9, 58]),
+        pygame.draw.rect(screen, BLACK, [624, 455, 9, 58]),
+        pygame.draw.rect(screen, BLACK, [609, 515, 9, 52]),
+        pygame.draw.rect(screen, BLACK, [168, 154, 757, 24]),
+        pygame.draw.rect(screen, BLACK, [293, 443, 74, 9]),
+        pygame.draw.rect(screen, BLACK, [293, 443, 8, 110]),
+        pygame.draw.rect(screen, BLACK, [328, 447, 8, 110]),
+        pygame.draw.rect(screen, BLACK, [297, 493, 76, 7]),
+        pygame.draw.rect(screen, BLACK, [293, 365, 8, 87]),
+        pygame.draw.rect(screen, BLACK, [1076, 281, 4, 87]),
+        pygame.draw.rect(screen, BLACK, [694, 428, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [713, 448, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [756, 410, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [739, 426, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [769, 465, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [751, 474, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [729, 497, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [668, 493, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [676, 450, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [689, 475, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [702, 499, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [714, 531, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [748, 531, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [761, 522, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [677, 522, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [782, 507, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [782, 414, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [767, 365, 4, 26]),
+        pygame.draw.rect(screen, BLACK, [799, 365, 4, 197]),
+        pygame.draw.rect(screen, BLACK, [814, 384, 232, 5]),
+        pygame.draw.rect(screen, BLACK, [814, 384, 4, 183]),
+        pygame.draw.rect(screen, BLACK, [966, 96, 4, 136]),
+        pygame.draw.rect(screen, BLACK, [976, 69, 4, 167]),
+        pygame.draw.rect(screen, BLACK, [986, 69, 4, 167]),
+        pygame.draw.rect(screen, BLACK, [997, 26, 4, 205]),
+        pygame.draw.rect(screen, BLACK, [1007, 26, 4, 205]),
+        pygame.draw.rect(screen, BLACK, [1016, 26, 4, 205]),
+        pygame.draw.rect(screen, BLACK, [1027, 26, 4, 205]),
+        pygame.draw.rect(screen, BLACK, [955, 128, 4, 109]),
+        pygame.draw.rect(screen, BLACK, [943, 159, 4, 86]),
+        pygame.draw.rect(screen, BLACK, [934, 159, 4, 86]),
+        pygame.draw.rect(screen, BLACK, [37, 36, 17, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 45, 17, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 54, 17, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 65, 17, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 76, 17, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 88, 17, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 104, 44, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 112, 44, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 121, 44, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 130, 44, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 140, 68, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 148, 68, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 156, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 165, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 174, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 183, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 192, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 201, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 211, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 221, 78, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 229, 103, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 238, 110, 5]),
+        pygame.draw.rect(screen, BLACK, [37, 248, 110, 5])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, CYAN, [1070, 308, 20, 40])
+]
+
+self.win_zones = [pygame.draw.rect(screen, CYAN, [1070, 308, 20, 40])]
+
+===
+
+Guide_to_Solution(12, 32, 1)
+
+dsnclass.Text("Guide to Solution", (800, 330), 45, "impact", WHITE, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [200, 308, 880, 40]),
+        pygame.draw.rect(screen, BLACK, [1070, 0, 10, 528]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 10, 576]),
+        pygame.draw.rect(screen, BLACK, [657, 250, 415, 59]),
+        pygame.draw.rect(screen, BLACK, [349, 275, 415, 36]),
+        pygame.draw.rect(screen, BLACK, [8, 458, 294, 111]),
+        pygame.draw.rect(screen, BLACK, [254, 487, 291, 84]),
+        pygame.draw.rect(screen, BLACK, [781, 548, 256, 20]),
+        pygame.draw.rect(screen, BLACK, [823, 222, 256, 33]),
+        pygame.draw.rect(screen, BLACK, [8, 49, 398, 45]),
+        pygame.draw.rect(screen, BLACK, [228, 75, 391, 20]),
+        pygame.draw.rect(screen, BLACK, [538, 511, 291, 64]),
+        pygame.draw.rect(screen, BLACK, [0, 566, 1080, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 1080, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 90, 800, 40]),
+        pygame.draw.rect(screen, BLACK, [999, 66, 74, 101]),
+        pygame.draw.rect(screen, BLACK, [0, 158, 173, 107]),
+        pygame.draw.rect(screen, BLACK, [8, 257, 56, 155]),
+        pygame.draw.rect(screen, BLACK, [858, 5, 216, 68]),
+        pygame.draw.rect(screen, BLACK, [548, 5, 384, 23])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, BLACK, [0, 120, 473, 40]),
+        pygame.draw.rect(screen, BLACK, [407, 329, 665, 40]),
+        pygame.draw.rect(screen, BLACK, [507, 367, 573, 40])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, CYAN, [1071, 528, 9, 38])
+]
+
+===
+
+Skull(29, 269, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 282, 1080, 294]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 26, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1054, 0, 26, 192]),
+        pygame.draw.rect(screen, (0, 0, 0), [1072, 192, 8, 90]),
+        pygame.draw.rect(screen, (0, 0, 0), [999, 252, 14, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [882, 0, 14, 269]),
+        pygame.draw.rect(screen, (0, 0, 0), [117, 0, 14, 269]),
+        pygame.draw.rect(screen, (0, 0, 0), [157, 0, 696, 196]),
+        pygame.draw.rect(screen, (0, 0, 0), [225, 255, 565, 28])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 255, 255), [221, 46, 75, 103]),
+        pygame.draw.rect(screen, (255, 255, 255), [708, 46, 75, 103]),
+        pygame.draw.rect(screen, (255, 255, 255), [487, 94, 19, 79]),
+        pygame.draw.rect(screen, (255, 255, 255), [287, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [363, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [406, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [324, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [452, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [502, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [547, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [596, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [641, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [249, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [684, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [730, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [768, 269, 7, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [200, 311, 610, 22]),
+        pygame.draw.rect(screen, (255, 255, 255), [8, 302, 10, 274]),
+        pygame.draw.rect(screen, (255, 255, 255), [56, 325, 10, 251]),
+        pygame.draw.rect(screen, (255, 255, 255), [1001, 302, 10, 274]),
+        pygame.draw.rect(screen, (255, 255, 255), [115, 407, 10, 169]),
+        pygame.draw.rect(screen, (255, 255, 255), [946, 325, 10, 251]),
+        pygame.draw.rect(screen, (255, 255, 255), [887, 407, 10, 169]),
+        pygame.draw.rect(screen, (255, 255, 255), [178, 466, 10, 110]),
+        pygame.draw.rect(screen, (255, 255, 255), [245, 508, 525, 23]),
+        pygame.draw.rect(screen, (255, 255, 255), [821, 466, 10, 110]),
+        pygame.draw.rect(screen, (255, 255, 255), [245, 508, 10, 68]),
+        pygame.draw.rect(screen, (255, 255, 255), [760, 508, 10, 68]),
+        pygame.draw.rect(screen, (255, 255, 255), [257, 533, 501, 7]),
+        pygame.draw.rect(screen, (255, 255, 255), [253, 356, 501, 7]),
+        pygame.draw.rect(screen, (255, 255, 255), [305, 393, 392, 7]),
+        pygame.draw.rect(screen, (255, 255, 255), [340, 424, 323, 7]),
+        pygame.draw.rect(screen, (255, 255, 255), [379, 455, 238, 7]),
+        pygame.draw.rect(screen, (255, 255, 255), [427, 485, 135, 7]),
+        pygame.draw.rect(screen, (255, 255, 255), [478, 559, 31, 7])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1060, 192, 12, 90])
+]
+
+===
+
+Mind_The_Gap(12, 200, 1)
+
+dsnclass.Text("Mind the Gap", (535, 100), 45, "impact", BLACK, None)
+
+self.win_zones = [pygame.draw.rect(screen, CYAN, [1070, 180, 20, 30])]
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 210, 490, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [540, 210, 540, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [1070, 0, 10, 180]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 10, 210]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 9])
+]
+
+self.respawn_zones = [
+        pygame.draw.rect(screen, LIME_GREEN, [270, 180, 20, 20])]
+
+===
+
+Rainbow(33, 356, 1)
+
+dsnclass.Text("rainbow", (465, 141), 75, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [1061, 5, 19, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 19, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [15, 560, 1065, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [18, 376, 131, 184]),
+        pygame.draw.rect(screen, (0, 0, 0), [148, 357, 131, 203]),
+        pygame.draw.rect(screen, (0, 0, 0), [279, 332, 131, 229]),
+        pygame.draw.rect(screen, (0, 0, 0), [15, 5, 1065, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [669, 332, 131, 229]),
+        pygame.draw.rect(screen, (0, 0, 0), [800, 357, 131, 203]),
+        pygame.draw.rect(screen, (0, 0, 0), [573, 312, 96, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [930, 376, 131, 184]),
+        pygame.draw.rect(screen, (0, 0, 0), [504, 288, 69, 285]),
+        pygame.draw.rect(screen, (0, 0, 0), [409, 312, 96, 248])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (181, 60, 177), [19, 21, 20, 231]),
+        pygame.draw.rect(screen, (181, 60, 177), [1041, 21, 20, 231]),
+        pygame.draw.rect(screen, (30, 144, 255), [39, 21, 110, 168]),
+        pygame.draw.rect(screen, (30, 144, 255), [931, 21, 110, 168]),
+        pygame.draw.rect(screen, (50, 205, 50), [149, 21, 139, 124]),
+        pygame.draw.rect(screen, (50, 205, 50), [792, 21, 139, 124]),
+        pygame.draw.rect(screen, (1, 100, 32), [26, 536, 1033, 16]),
+        pygame.draw.rect(screen, (235, 195, 65), [288, 21, 107, 103]),
+        pygame.draw.rect(screen, (235, 195, 65), [685, 21, 107, 103]),
+        pygame.draw.rect(screen, (255, 165, 0), [395, 21, 107, 70]),
+        pygame.draw.rect(screen, (255, 165, 0), [578, 21, 107, 70]),
+        pygame.draw.rect(screen, (255, 0, 0), [502, 21, 76, 32]),
+        pygame.draw.rect(screen, (1, 100, 32), [25, 503, 10, 47]),
+        pygame.draw.rect(screen, (1, 100, 32), [1050, 503, 10, 47]),
+        pygame.draw.rect(screen, (255, 182, 193), [79, 405, 69, 72]),
+        pygame.draw.rect(screen, (255, 182, 193), [932, 405, 69, 72]),
+        pygame.draw.rect(screen, (52, 52, 52), [159, 371, 755, 40]),
+        pygame.draw.rect(screen, (52, 52, 52), [344, 346, 389, 27]),
+        pygame.draw.rect(screen, (150, 75, 0), [430, 324, 219, 12]),
+        pygame.draw.rect(screen, (150, 75, 0), [476, 334, 139, 12]),
+        pygame.draw.rect(screen, (1, 100, 32), [517, 296, 44, 20])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [931, 366, 130, 10])
+]
+
+====
+
+Four_Trys(44, 107, 1)
+
+dsnclass.Text("four Trys", (900, 452), 30, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 19, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 18]),
+        pygame.draw.rect(screen, (0, 0, 0), [1061, 0, 19, 114]),
+        pygame.draw.rect(screen, (0, 0, 0), [1061, 178, 19, 156]),
+        pygame.draw.rect(screen, (0, 0, 0), [56, 133, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [700, 181, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [902, 159, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 370, 1080, 206]),
+        pygame.draw.rect(screen, (0, 0, 0), [41, 290, 1027, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [83, 340, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [352, 348, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 343, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [622, 343, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [747, 334, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [156, 327, 6, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 345, 6, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [552, 345, 6, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [622, 345, 6, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [690, 345, 6, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [949, 337, 6, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [78, 340, 6, 33]),
+        pygame.draw.rect(screen, (0, 0, 0), [56, 17, 6, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [156, 325, 141, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [56, 87, 125, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [175, 17, 6, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [492, 5, 6, 73]),
+        pygame.draw.rect(screen, (0, 0, 0), [492, 72, 122, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [703, 97, 122, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [608, 5, 6, 73]),
+        pygame.draw.rect(screen, (0, 0, 0), [702, 17, 6, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [819, 17, 6, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [291, 325, 6, 49]),
+        pygame.draw.rect(screen, (0, 0, 0), [166, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [172, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [178, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [184, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [190, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [197, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [203, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [210, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [217, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [224, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [230, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [236, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [243, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [250, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [258, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [266, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [272, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [278, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [284, 344, 3, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 138, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 215, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [702, 247, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [286, 173, 125, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [286, 105, 125, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [286, 17, 6, 89]),
+        pygame.draw.rect(screen, (0, 0, 0), [406, 17, 6, 94]),
+        pygame.draw.rect(screen, (0, 0, 0), [903, 123, 122, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [903, 17, 6, 108]),
+        pygame.draw.rect(screen, (0, 0, 0), [1019, 17, 6, 109]),
+        pygame.draw.rect(screen, (0, 0, 0), [846, 314, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [815, 334, 6, 49]),
+        pygame.draw.rect(screen, (0, 0, 0), [845, 314, 6, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [917, 314, 6, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [949, 337, 74, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [1043, 352, 25, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [1043, 296, 6, 62]),
+        pygame.draw.rect(screen, (0, 0, 0), [1061, 329, 7, 26])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (0, 0, 0), [66, 14, 104, 68]),
+        pygame.draw.rect(screen, (0, 0, 0), [502, 5, 101, 63]),
+        pygame.draw.rect(screen, (0, 0, 0), [710, 6, 107, 89]),
+        pygame.draw.rect(screen, (0, 0, 0), [630, 351, 58, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [492, 351, 58, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 334, 124, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [86, 348, 75, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [86, 355, 75, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [86, 362, 75, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [296, 12, 106, 90]),
+        pygame.draw.rect(screen, (0, 0, 0), [918, 17, 91, 94])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1068, 114, 12, 64]),
+        pygame.draw.rect(screen, (47, 237, 237), [1068, 334, 12, 36])
+]
+
+=======
+
+Block_Maze_5(12, 12, 1)
+
+dsnclass.Text("block maze 5", (210, 400), 75, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [0, 567, 1100, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 1100, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 300, 1100, 276]),
+        pygame.draw.rect(screen, BLACK, [250, 40, 600, 10]),
+        pygame.draw.rect(screen, BLACK, [900, 60, 50, 10]),
+        pygame.draw.rect(screen, BLACK, [1000, 70, 100, 10]),
+        pygame.draw.rect(screen, BLACK, [950, 40, 50, 20]),
+        pygame.draw.rect(screen, BLACK, [0, 85, 150, 10]),
+        pygame.draw.rect(screen, BLACK, [200, 85, 675, 10]),
+        pygame.draw.rect(screen, BLACK, [550, 50, 200, 35]),
+        pygame.draw.rect(screen, BLACK, [250, 130, 300, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 85, 125, 55]),
+        pygame.draw.rect(screen, BLACK, [650, 150, 450, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 180, 450, 10]),
+        pygame.draw.rect(screen, BLACK, [50, 265, 300, 10]),
+        pygame.draw.rect(screen, BLACK, [500, 180, 150, 10]),
+        pygame.draw.rect(screen, BLACK, [850, 120, 250, 30]),
+        pygame.draw.rect(screen, BLACK, [665, 265, 450, 10]),
+        pygame.draw.rect(screen, BLACK, [800, 230, 220, 10]),
+        pygame.draw.rect(screen, BLACK, [675, 200, 100, 10]),
+        pygame.draw.rect(screen, BLACK, [850, 275, 100, 25]),
+        pygame.draw.rect(screen, BLACK, [450, 280, 125, 20]),
+        pygame.draw.rect(screen, BLACK, [480, 240, 62, 20]),
+        pygame.draw.rect(screen, BLACK, [0, 40, 200, 10]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 10, 580]),
+        pygame.draw.rect(screen, BLACK, [400, 0, 10, 40]),
+        pygame.draw.rect(screen, BLACK, [940, 40, 10, 20]),
+        pygame.draw.rect(screen, BLACK, [990, 40, 10, 40]),
+        pygame.draw.rect(screen, BLACK, [500, 140, 10, 40]),
+        pygame.draw.rect(screen, BLACK, [400, 104, 10, 20]),
+        pygame.draw.rect(screen, BLACK, [1070, 0, 10, 50]),
+        pygame.draw.rect(screen, BLACK, [1070, 70, 10, 347])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, CYAN, [1070, 50, 20, 20])
+]
+
+=====
+
+Uneven_Platforms(69, 263, 1)
+
+dsnclass.Text("Uneven Platforms", (450, 252), 60, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [0, 447, 1080, 129]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 1080, 114]),
+        pygame.draw.rect(screen, BLACK, [0, 210, 10, 114]),
+        pygame.draw.rect(screen, BLACK, [1066, 210, 14, 114]),
+        pygame.draw.rect(screen, BLACK, [0, 109, 29, 104]),
+        pygame.draw.rect(screen, BLACK, [1051, 110, 29, 104]),
+        pygame.draw.rect(screen, BLACK, [1051, 320, 29, 131]),
+        pygame.draw.rect(screen, BLACK, [0, 320, 29, 131]),
+        pygame.draw.rect(screen, BLACK, [280, 379, 71, 9]),
+        pygame.draw.rect(screen, BLACK, [389, 410, 71, 9]),
+        pygame.draw.rect(screen, BLACK, [759, 382, 71, 9]),
+        pygame.draw.rect(screen, BLACK, [848, 353, 76, 9]),
+        pygame.draw.rect(screen, BLACK, [163, 353, 71, 9]),
+        pygame.draw.rect(screen, BLACK, [28, 330, 96, 9]),
+        pygame.draw.rect(screen, BLACK, [943, 327, 92, 9]),
+        pygame.draw.rect(screen, BLACK, [637, 410, 71, 9])
+]
+
+self.win_zones = [
+        pygame.draw.rect(screen, CYAN, [1065, 214, 9, 106])
+        ]
+
+================
+
+Five_Blocks(26, 89, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 21]),    
+        pygame.draw.rect(screen, (0, 0, 0), [21, 109, 609, 169]), 
+        pygame.draw.rect(screen, (0, 0, 0), [759, 109, 145, 169]),
+        pygame.draw.rect(screen, (0, 0, 0), [982, 104, 10, 39]),  
+        pygame.draw.rect(screen, (0, 0, 0), [1059, 0, 21, 49]),
+        pygame.draw.rect(screen, (0, 0, 0), [1059, 76, 21, 500]),
+        pygame.draw.rect(screen, (0, 0, 0), [1072, 37, 8, 68]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 21, 323]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 393, 21, 183]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 298, 10, 183]),
+        pygame.draw.rect(screen, (0, 0, 0), [649, 402, 410, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [100, 402, 221, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [371, 402, 221, 174])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1062, 49, 10, 27]),
+        pygame.draw.rect(screen, (47, 237, 237), [10, 323, 8, 70])
+]
+
+=============
+
+C_Block(30, 56, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [1055, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 548, 1080, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 90, 487, 45]),
+        pygame.draw.rect(screen, (0, 0, 0), [593, 90, 487, 45]),
+        pygame.draw.rect(screen, (0, 0, 0), [593, 455, 487, 45]),
+        pygame.draw.rect(screen, (0, 0, 0), [593, 90, 51, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [593, 326, 51, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [436, 326, 51, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [436, 90, 51, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 455, 487, 45]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [26, 132, 86, 326]),
+        pygame.draw.rect(screen, (0, 0, 0), [968, 132, 86, 326]),
+        pygame.draw.rect(screen, (0, 0, 0), [645, 374, 322, 80]),
+        pygame.draw.rect(screen, (0, 0, 0), [645, 136, 322, 80]),
+        pygame.draw.rect(screen, (0, 0, 0), [113, 136, 322, 80]),
+        pygame.draw.rect(screen, (0, 0, 0), [113, 217, 57, 156]),
+        pygame.draw.rect(screen, (0, 0, 0), [910, 217, 57, 156]),
+        pygame.draw.rect(screen, (0, 0, 0), [671, 344, 238, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [671, 217, 238, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [171, 217, 238, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [171, 344, 238, 29]),
+        pygame.draw.rect(screen, (235, 195, 65), [171, 247, 10, 48]),
+        pygame.draw.rect(screen, (235, 195, 65), [899, 247, 10, 48]),
+        pygame.draw.rect(screen, (0, 0, 0), [113, 374, 322, 80])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 165, 0), [386, 90, 26, 11]),
+        pygame.draw.rect(screen, (255, 165, 0), [674, 90, 28, 11]),
+        pygame.draw.rect(screen, (52, 52, 52), [25, 500, 1030, 48])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [386, 489, 26, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [674, 489, 28, 13])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [900, 296, 9, 47]),
+        pygame.draw.rect(screen, (47, 237, 237), [171, 296, 9, 47])
+]
+
+===========
+
+Uneven_Platforms_2(69, 263, 1)
+
+dsnclass.Text("Uneven Platforms", (450, 52), 60, "impact", WHITE, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 114]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 109, 29, 104]),
+        pygame.draw.rect(screen, (0, 0, 0), [1051, 110, 29, 104]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 379, 71, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [389, 410, 71, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [759, 382, 71, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [163, 353, 71, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [943, 327, 92, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 475, 1080, 101]),
+        pygame.draw.rect(screen, (0, 0, 0), [637, 410, 71, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [515, 448, 71, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [1073, 210, 7, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 210, 7, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [1051, 252, 29, 193]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 252, 29, 193]),
+        pygame.draw.rect(screen, (0, 0, 0), [28, 330, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [127, 292, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [372, 227, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [528, 314, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [804, 282, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [724, 252, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [911, 252, 127, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [848, 353, 76, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [734, 169, 73, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [766, 169, 9, 61]),
+        pygame.draw.rect(screen, (0, 0, 0), [724, 246, 9, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [811, 246, 9, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [247, 255, 96, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [910, 300, 27, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [660, 285, 27, 9])
+]
+
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1065, 214, 9, 38]),
+        pygame.draw.rect(screen, (47, 237, 237), [733, 249, 78, 3])
+]
+
+=======
+
+Pillars_drop(54, 40, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 50, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1030, 0, 50, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [50, 55, 50, 521]),
+        pygame.draw.rect(screen, (0, 0, 0), [980, 55, 50, 521]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 476, 830, 100]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 322, 830, 101]),
+        pygame.draw.rect(screen, (0, 0, 0), [131, 269, 9, 53]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 103, 830, 166]),
+        pygame.draw.rect(screen, (0, 0, 0), [152, 292, 739, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [187, 447, 739, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [938, 423, 9, 53]),
+        pygame.draw.rect(screen, (0, 0, 0), [920, 453, 6, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [152, 299, 6, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [827, 286, 6, 18]),
+        pygame.draw.rect(screen, (0, 0, 0), [176, 286, 6, 18]),
+        pygame.draw.rect(screen, (0, 0, 0), [225, 441, 6, 18]),
+        pygame.draw.rect(screen, (0, 0, 0), [892, 441, 6, 18])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (52, 52, 52), [947, 214, 5, 52]),
+        pygame.draw.rect(screen, (52, 52, 52), [128, 214, 5, 52]),
+        pygame.draw.rect(screen, (52, 52, 52), [128, 480, 5, 52]),
+        pygame.draw.rect(screen, (52, 52, 52), [946, 480, 5, 52]),
+        pygame.draw.rect(screen, (125, 125, 125), [1075, 524, 5, 52]),
+        pygame.draw.rect(screen, (125, 125, 125), [0, 524, 5, 52])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [926, 423, 12, 53]),
+        pygame.draw.rect(screen, (47, 237, 237), [140, 269, 12, 53])
+]
+
+========
+
+Hit_Space_To_Jump(12, 297, 1)
+
+dsnclass.Text("Hit Space/up/w to jump", (600, 400), 45, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [0, 0, 10, 320]),
+        pygame.draw.rect(screen, BLACK, [0, 256, 10, 320]),
+        pygame.draw.rect(screen, BLACK, [4, 354, 1076, 222]),
+        pygame.draw.rect(screen, BLACK, [64, 346, 225, 11]),
+        pygame.draw.rect(screen, BLACK, [788, 346, 225, 11]),
+        pygame.draw.rect(screen, BLACK, [379, 324, 300, 30]),
+        pygame.draw.rect(screen, BLACK, [1070, 328, 10, 248]),
+        pygame.draw.rect(screen, BLACK, [1070, 0, 10, 296])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, BLACK, [6, 34, 1074, 30]),
+        pygame.draw.rect(screen, BLACK, [6, 117, 1074, 30]),
+        pygame.draw.rect(screen, BLACK, [164, 15, 276, 15]),
+        pygame.draw.rect(screen, BLACK, [639, 15, 276, 15]),
+        pygame.draw.rect(screen, BLACK, [0, 165, 276, 15]),
+        pygame.draw.rect(screen, BLACK, [804, 165, 276, 15]),
+        pygame.draw.rect(screen, BLACK, [351, 53, 378, 76]),
+        pygame.draw.rect(screen, BLACK, [0, 53, 262, 76]),
+        pygame.draw.rect(screen, BLACK, [810, 53, 270, 76]),
+        pygame.draw.rect(screen, BLACK, [296, 172, 484, 8]),
+        pygame.draw.rect(screen, BLACK, [20, 196, 492, 8]),
+        pygame.draw.rect(screen, BLACK, [570, 196, 485, 8]),
+        pygame.draw.rect(screen, BLACK, [0, 0, 1080, 16])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, CYAN, [1071, 296, 9, 32])
+]
+
+======
+
+Candles(12, 282, 1)
+
+dsnclass.Text("candles", (150, 400), 75, "impact", WHITE, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 567, 1100, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1100, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [40, 270, 200, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [340, 240, 200, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [640, 210, 200, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [940, 180, 100, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 10, 580]),
+        pygame.draw.rect(screen, (0, 0, 0), [725, 120, 10, 70]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 130, 10, 120]),
+        pygame.draw.rect(screen, (0, 0, 0), [425, 155, 10, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [5, 301, 1075, 252]),
+        pygame.draw.rect(screen, (0, 0, 0), [1071, 28, 9, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [1071, 153, 9, 423]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 75])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (125, 125, 125), [425, 130, 10, 25]),
+        pygame.draw.rect(screen, (125, 125, 125), [725, 130, 10, 45]),
+        pygame.draw.rect(screen, (125, 125, 125), [990, 119, 10, 48]),
+        pygame.draw.rect(screen, (125, 125, 125), [835, 301, 10, 263]),
+        pygame.draw.rect(screen, (125, 125, 125), [934, 301, 115, 205]),
+        pygame.draw.rect(screen, (125, 125, 125), [9, 553, 1065, 14]),
+        pygame.draw.rect(screen, (125, 125, 125), [377, 440, 4, 118]),
+        pygame.draw.rect(screen, (125, 125, 125), [343, 437, 38, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [311, 444, 29, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [311, 445, 3, 111]),
+        pygame.draw.rect(screen, (125, 125, 125), [273, 506, 3, 51]),
+        pygame.draw.rect(screen, (125, 125, 125), [273, 506, 39, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [837, 350, 108, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [837, 458, 108, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [903, 500, 34, 2]),
+        pygame.draw.rect(screen, (125, 125, 125), [903, 460, 5, 99]),
+        pygame.draw.rect(screen, (125, 125, 125), [864, 529, 5, 29]),
+        pygame.draw.rect(screen, (125, 125, 125), [842, 529, 27, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [906, 502, 29, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [1045, 503, 4, 57]),
+        pygame.draw.rect(screen, (125, 125, 125), [639, 210, 4, 31]),
+        pygame.draw.rect(screen, (125, 125, 125), [537, 240, 4, 31]),
+        pygame.draw.rect(screen, (125, 125, 125), [337, 301, 10, 149]),
+        pygame.draw.rect(screen, (125, 125, 125), [344, 395, 194, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [521, 456, 194, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [465, 493, 90, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [719, 493, 90, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [534, 395, 4, 64]),
+        pygame.draw.rect(screen, (125, 125, 125), [552, 494, 4, 64]),
+        pygame.draw.rect(screen, (125, 125, 125), [465, 494, 4, 64]),
+        pygame.draw.rect(screen, (125, 125, 125), [719, 494, 4, 64]),
+        pygame.draw.rect(screen, (125, 125, 125), [806, 494, 4, 31]),
+        pygame.draw.rect(screen, (125, 125, 125), [521, 456, 4, 41]),
+        pygame.draw.rect(screen, (125, 125, 125), [712, 456, 4, 22]),
+        pygame.draw.rect(screen, (125, 125, 125), [489, 398, 4, 99]),
+        pygame.draw.rect(screen, (125, 125, 125), [764, 473, 4, 23]),
+        pygame.draw.rect(screen, (125, 125, 125), [730, 473, 4, 23]),
+        pygame.draw.rect(screen, (125, 125, 125), [713, 473, 54, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [720, 522, 119, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [313, 537, 154, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [378, 468, 112, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [535, 412, 307, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [517, 367, 325, 4]),
+        pygame.draw.rect(screen, (125, 125, 125), [517, 368, 3, 30]),
+        pygame.draw.rect(screen, (125, 125, 125), [534, 368, 3, 30]),
+        pygame.draw.rect(screen, (125, 125, 125), [766, 368, 3, 48]),
+        pygame.draw.rect(screen, (125, 125, 125), [859, 352, 3, 111]),
+        pygame.draw.rect(screen, (125, 125, 125), [26, 428, 317, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [68, 358, 246, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [308, 359, 6, 74]),
+        pygame.draw.rect(screen, (125, 125, 125), [339, 240, 4, 15]),
+        pygame.draw.rect(screen, (125, 125, 125), [837, 210, 4, 32]),
+        pygame.draw.rect(screen, (125, 125, 125), [940, 180, 4, 71]),
+        pygame.draw.rect(screen, (125, 125, 125), [1038, 180, 4, 72]),
+        pygame.draw.rect(screen, (194, 57, 33), [10, 75, 1061, 15])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [125, 110, 10, 20]),
+        pygame.draw.rect(screen, (255, 0, 0), [425, 110, 10, 20]),
+        pygame.draw.rect(screen, (255, 0, 0), [725, 110, 10, 20]),
+        pygame.draw.rect(screen, (255, 0, 0), [990, 110, 10, 10])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1070, 103, 10, 50])
+]
+
+===========
+
+Shrine(45, 318, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [19, 376, 1031, 159]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 36, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [97, 348, 10, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [969, 348, 10, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [97, 348, 882, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [228, 292, 246, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [593, 292, 246, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [493, 265, 78, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [179, 259, 246, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [142, 211, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [817, 211, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [248, 201, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [140, 325, 10, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [663, 187, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [388, 212, 292, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [397, 178, 276, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [397, 187, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [567, 127, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [373, 127, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [180, 268, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [248, 212, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [709, 201, 118, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [713, 102, 83, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [859, 102, 83, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [110, 102, 83, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [10, 83, 66, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [974, 83, 66, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [817, 212, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [974, 76, 10, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [68, 76, 10, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [265, 102, 83, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [127, 57, 219, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [712, 57, 219, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [9, 0, 1041, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [418, 83, 217, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [886, 268, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [646, 259, 251, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [34, 244, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [922, 244, 116, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [571, 163, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [479, 157, 102, 20]),
+        pygame.draw.rect(screen, (0, 0, 0), [479, 163, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [418, 61, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [625, 61, 10, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [178, 323, 720, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [1039, 0, 41, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [926, 325, 10, 30])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 0, 0), [407, 188, 256, 24]),
+        pygame.draw.rect(screen, (235, 195, 65), [150, 333, 257, 15]),
+        pygame.draw.rect(screen, (150, 75, 0), [107, 358, 862, 18]),
+        pygame.draw.rect(screen, (30, 144, 255), [178, 357, 720, 10]),
+        pygame.draw.rect(screen, (255, 182, 193), [12, 0, 1049, 4]),
+        pygame.draw.rect(screen, (52, 52, 52), [12, 395, 1049, 108]),
+        pygame.draw.rect(screen, (235, 195, 65), [663, 333, 263, 15])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (139, 0, 0), [36, 534, 1008, 42]),
+        pygame.draw.rect(screen, (255, 0, 0), [563, 532, 298, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [1006, 517, 9, 21]),
+        pygame.draw.rect(screen, (255, 0, 0), [64, 518, 9, 21]),
+        pygame.draw.rect(screen, (255, 0, 0), [37, 533, 298, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [303, 529, 186, 7]),
+        pygame.draw.rect(screen, (255, 0, 0), [0, 517, 73, 7]),
+        pygame.draw.rect(screen, (255, 0, 0), [0, 0, 5, 523]),
+        pygame.draw.rect(screen, (255, 0, 0), [21, 519, 5, 57]),
+        pygame.draw.rect(screen, (255, 0, 0), [1055, 519, 5, 57]),
+        pygame.draw.rect(screen, (255, 0, 0), [55, 504, 5, 30]),
+        pygame.draw.rect(screen, (255, 0, 0), [55, 503, 971, 5]),
+        pygame.draw.rect(screen, (255, 0, 0), [75, 511, 929, 5]),
+        pygame.draw.rect(screen, (255, 0, 0), [1075, 0, 5, 523]),
+        pygame.draw.rect(screen, (255, 0, 0), [1021, 504, 5, 31]),
+        pygame.draw.rect(screen, (255, 0, 0), [1007, 517, 73, 7]),
+        pygame.draw.rect(screen, (255, 0, 0), [744, 535, 298, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [301, 537, 298, 10])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [428, 71, 197, 12])
+]
+
+self.respawn_zones =  [
+        pygame.draw.rect(screen, (50, 205, 50), [407, 333, 256, 15])
+]
+
+==================
+
+Here_1(119, 260, 1)
+
+self.respawn_zones =  [
+        pygame.draw.rect(screen, (50, 205, 50), [20, 19, 59, 538]),
+        pygame.draw.rect(screen, (50, 205, 50), [1001, 19, 59, 538])
+]
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 20, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1060, 0, 20, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1063, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 557, 1063, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [984, 19, 17, 319]),
+        pygame.draw.rect(screen, (0, 0, 0), [79, 392, 922, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [79, 19, 17, 319]),
+        pygame.draw.rect(screen, (0, 0, 0), [931, 406, 9, 93]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 58, 93, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [987, 58, 93, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [987, 522, 93, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 522, 93, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [84, 522, 9, 45]),
+        pygame.draw.rect(screen, (0, 0, 0), [987, 522, 9, 45]),
+        pygame.draw.rect(screen, (0, 0, 0), [102, 105, 876, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 406, 9, 93]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 531, 807, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [199, 507, 665, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [407, 460, 261, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [288, 484, 492, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [497, 434, 86, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 378, 807, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [147, 119, 5, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [921, 119, 5, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [474, 302, 15, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [481, 302, 115, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [481, 341, 115, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [500, 302, 80, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [486, 159, 104, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 222, 69, 48]),
+        pygame.draw.rect(screen, (0, 0, 0), [520, 256, 41, 48]),
+        pygame.draw.rect(screen, (0, 0, 0), [123, 159, 363, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [591, 302, 15, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [116, 116, 8, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [470, 168, 5, 87]),
+        pygame.draw.rect(screen, (0, 0, 0), [573, 283, 5, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [501, 283, 5, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [590, 159, 363, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [147, 153, 779, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [470, 252, 24, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [582, 252, 24, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [601, 168, 5, 87]),
+        pygame.draw.rect(screen, (0, 0, 0), [582, 256, 5, 27]),
+        pygame.draw.rect(screen, (0, 0, 0), [489, 256, 5, 27]),
+        pygame.draw.rect(screen, (0, 0, 0), [573, 280, 14, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [489, 280, 17, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [951, 116, 8, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [33, 72, 8, 145]),
+        pygame.draw.rect(screen, (0, 0, 0), [33, 215, 21, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [1027, 215, 21, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [1040, 72, 8, 145]),
+        pygame.draw.rect(screen, (0, 0, 0), [1020, 215, 8, 57]),
+        pygame.draw.rect(screen, (0, 0, 0), [54, 215, 8, 57])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (52, 52, 52), [978, 19, 6, 114]),
+        pygame.draw.rect(screen, (52, 52, 52), [96, 19, 6, 114]),
+        pygame.draw.rect(screen, (52, 52, 52), [96, 19, 883, 86]),
+        pygame.draw.rect(screen, (255, 255, 255), [117, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [141, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [189, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [256, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [331, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [419, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [355, 74, 60, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [664, 74, 20, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [443, 74, 60, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [687, 74, 60, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [750, 74, 60, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [813, 74, 60, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [876, 74, 60, 20]),
+        pygame.draw.rect(screen, (255, 255, 255), [574, 74, 20, 20]),
+        pygame.draw.rect(screen, (125, 125, 125), [154, 119, 765, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [154, 148, 765, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [154, 119, 1, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [918, 119, 1, 29]),
+        pygame.draw.rect(screen, (52, 52, 52), [531, 170, 17, 86])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (139, 0, 0), [79, 536, 5, 21]),
+        pygame.draw.rect(screen, (139, 0, 0), [996, 536, 5, 21]),
+        pygame.draw.rect(screen, (139, 0, 0), [142, 406, 5, 21]),
+        pygame.draw.rect(screen, (139, 0, 0), [926, 406, 5, 21]),
+        pygame.draw.rect(screen, (139, 0, 0), [142, 406, 21, 5]),
+        pygame.draw.rect(screen, (139, 0, 0), [910, 406, 21, 5]),
+        pygame.draw.rect(screen, (139, 0, 0), [978, 133, 6, 180]),
+        pygame.draw.rect(screen, (139, 0, 0), [96, 133, 6, 180]),
+        pygame.draw.rect(screen, (194, 57, 33), [940, 406, 6, 63]),
+        pygame.draw.rect(screen, (194, 57, 33), [127, 406, 6, 63]),
+        pygame.draw.rect(screen, (194, 57, 33), [87, 406, 40, 11]),
+        pygame.draw.rect(screen, (194, 57, 33), [946, 406, 40, 11])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [489, 406, 101, 12]),
+        pygame.draw.rect(screen, (47, 237, 237), [163, 406, 747, 4])
+]
+
+=================
+
+Level_2(66, 370, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 28, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [7, 0, 1066, 22]),
+        pygame.draw.rect(screen, (0, 0, 0), [64, 391, 176, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [323, 358, 176, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [922, 426, 132, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [1052, 0, 28, 352]),
+        pygame.draw.rect(screen, (0, 0, 0), [1052, 419, 28, 157]),
+        pygame.draw.rect(screen, (0, 0, 0), [1071, 347, 9, 81]),
+        pygame.draw.rect(screen, (0, 0, 0), [703, 468, 176, 7])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1062, 352, 9, 67])
+]
+
+===============
+
+Mind_The_Gap_3(57, 338, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 50, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [1030, 5, 50, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [315, 327, 445, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [423, 295, 230, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 366, 520, 210]),
+        pygame.draw.rect(screen, (0, 0, 0), [560, 239, 520, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [494, 269, 92, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 185, 399, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [684, 185, 396, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [401, 210, 56, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 161, 178, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 239, 520, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [560, 135, 436, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [80, 135, 436, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [560, 366, 520, 210]),
+        pygame.draw.rect(screen, (0, 0, 0), [560, 135, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [507, 135, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [486, 135, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [624, 210, 59, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [457, 177, 59, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 106, 131, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [320, 106, 131, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [621, 106, 131, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [711, 83, 131, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [221, 83, 131, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [319, 61, 195, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [563, 61, 195, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [508, 81, 59, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [559, 61, 9, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [507, 61, 9, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [808, 106, 131, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 43, 184, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [580, 135, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 22]),
+        pygame.draw.rect(screen, (0, 0, 0), [905, 0, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [905, 239, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [896, 43, 184, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 282, 184, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [166, 0, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [166, 240, 9, 51]),
+        pygame.draw.rect(screen, (0, 0, 0), [896, 282, 184, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [917, 208, 163, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 208, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [771, 257, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [124, 185, 9, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [294, 240, 9, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [166, 257, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [309, 247, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [628, 247, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 309, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [937, 309, 143, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [927, 185, 9, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [944, 287, 9, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [127, 287, 9, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [560, 177, 59, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [589, 146, 198, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [288, 146, 198, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [408, 73, 99, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [568, 73, 99, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [31, 301, 99, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [174, 252, 121, 3]),
+        pygame.draw.rect(screen, (0, 0, 0), [784, 252, 121, 3]),
+        pygame.draw.rect(screen, (0, 0, 0), [901, 161, 178, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [916, 248, 121, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [43, 248, 121, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [951, 301, 99, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [912, 23, 124, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [44, 23, 124, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [776, 240, 9, 26])
+]
+
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [516, 67, 5, 14]),
+        pygame.draw.rect(screen, (47, 237, 237), [554, 67, 5, 14]),
+        pygame.draw.rect(screen, (47, 237, 237), [521, 74, 33, 7])
+]
+
+====================
+
+Mind_The_Gap_4(526, 375, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 24, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1056, 0, 24, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [60, 403, 955, 173]),
+        pygame.draw.rect(screen, (0, 0, 0), [60, 385, 955, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [61, 359, 299, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [714, 359, 299, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [58, 248, 376, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 309, 186, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 326, 299, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 320, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [58, 254, 8, 52]),
+        pygame.draw.rect(screen, (0, 0, 0), [1002, 254, 8, 52]),
+        pygame.draw.rect(screen, (0, 0, 0), [634, 248, 376, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [57, 222, 953, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 326, 299, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [277, 309, 186, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 293, 78, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [385, 293, 78, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [900, 320, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [478, 298, 13, 63]),
+        pygame.draw.rect(screen, (0, 0, 0), [479, 306, 113, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [478, 293, 115, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [580, 298, 13, 63]),
+        pygame.draw.rect(screen, (0, 0, 0), [464, 276, 144, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 197, 299, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 191, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 146, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [679, 146, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [720, 171, 186, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [898, 165, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 197, 299, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [455, 191, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [385, 159, 78, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [455, 146, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [385, 146, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 171, 186, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 165, 8, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 159, 78, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [384, 99, 78, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 99, 78, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [679, 84, 329, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [59, 84, 329, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [61, 65, 177, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [831, 65, 177, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [235, 60, 177, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [656, 60, 177, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [450, 46, 177, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [464, 127, 144, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [7, 19, 448, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [619, 19, 448, 5])
+]
+
+self.draw =  [
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [458, 38, 160, 8])
+]
+
+=================
+
+Pillars_accelearated(960, 20, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1055, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [234, 98, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [748, 94, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [836, 58, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [953, 32, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [621, 127, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [135, 60, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [12, 35, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [25, 59, 76, 501]),
+        pygame.draw.rect(screen, (0, 0, 0), [980, 59, 76, 501]),
+        pygame.draw.rect(screen, (0, 0, 0), [376, 483, 329, 48]),
+        pygame.draw.rect(screen, (0, 0, 0), [407, 527, 264, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [455, 537, 174, 39]),
+        pygame.draw.rect(screen, (0, 0, 0), [487, 104, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [487, 282, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [101, 148, 121, 300]),
+        pygame.draw.rect(screen, (0, 0, 0), [859, 148, 121, 300]),
+        pygame.draw.rect(screen, (0, 0, 0), [357, 127, 103, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [253, 203, 248, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [570, 203, 253, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [705, 278, 275, 282]),
+        pygame.draw.rect(screen, (0, 0, 0), [101, 277, 275, 282]),
+        pygame.draw.rect(screen, (0, 0, 0), [534, 288, 8, 141]),
+        pygame.draw.rect(screen, (0, 0, 0), [851, 162, 8, 117]),
+        pygame.draw.rect(screen, (0, 0, 0), [222, 161, 8, 117])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 0, 0), [376, 531, 31, 34]),
+        pygame.draw.rect(screen, (255, 0, 0), [671, 531, 34, 34]),
+        pygame.draw.rect(screen, (194, 57, 33), [407, 544, 48, 15]),
+        pygame.draw.rect(screen, (194, 57, 33), [629, 544, 42, 15]),
+        pygame.draw.rect(screen, (255, 0, 0), [629, 559, 451, 17]),
+        pygame.draw.rect(screen, (255, 0, 0), [0, 36, 6, 527]),
+        pygame.draw.rect(screen, (255, 0, 0), [1074, 36, 6, 527]),
+        pygame.draw.rect(screen, (255, 0, 0), [0, 559, 455, 17]),
+        pygame.draw.rect(screen, (255, 255, 255), [714, 288, 346, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [23, 288, 346, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [23, 67, 9, 222]),
+        pygame.draw.rect(screen, (255, 255, 255), [1051, 67, 9, 222])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (194, 57, 33), [376, 437, 329, 46]),
+        pygame.draw.rect(screen, (194, 57, 33), [407, 468, 7, 80]),
+        pygame.draw.rect(screen, (194, 57, 33), [664, 468, 7, 80]),
+        pygame.draw.rect(screen, (139, 0, 0), [415, 469, 249, 14]),
+        pygame.draw.rect(screen, (255, 0, 0), [542, 301, 10, 129]),
+        pygame.draw.rect(screen, (255, 0, 0), [524, 301, 10, 129]),
+        pygame.draw.rect(screen, (255, 0, 0), [376, 429, 329, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [487, 291, 37, 9]),
+        pygame.draw.rect(screen, (255, 0, 0), [552, 291, 38, 9])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [25, 17, 8, 18]),
+        pygame.draw.rect(screen, (47, 237, 237), [1047, 41, 8, 18]),
+        pygame.draw.rect(screen, (47, 237, 237), [851, 152, 8, 10]),
+        pygame.draw.rect(screen, (47, 237, 237), [222, 152, 8, 10]),
+        pygame.draw.rect(screen, (47, 237, 237), [524, 291, 10, 10]),
+        pygame.draw.rect(screen, (47, 237, 237), [542, 291, 10, 10])
+]
+
+==========
+
+Pillars_and_needles(41, 61, 1)
+
+kogclass.Text("pillars and needles", (540, 42), 60, "impact", (0, 0, 0), None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 34, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [34, 78, 130, 425]),
+        pygame.draw.rect(screen, (0, 0, 0), [916, 78, 130, 425]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 120, 130, 425]),
+        pygame.draw.rect(screen, (0, 0, 0), [786, 120, 130, 425]),
+        pygame.draw.rect(screen, (0, 0, 0), [294, 151, 130, 425]),
+        pygame.draw.rect(screen, (0, 0, 0), [656, 151, 130, 425]),
+        pygame.draw.rect(screen, (0, 0, 0), [479, 545, 130, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [1046, 78, 34, 498]),
+        pygame.draw.rect(screen, (0, 0, 0), [1067, 14, 13, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [479, 171, 130, 353]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 223, 6, 353]),
+        pygame.draw.rect(screen, (0, 0, 0), [629, 223, 6, 353]),
+        pygame.draw.rect(screen, (0, 0, 0), [1046, 5, 34, 27]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 1080, 27])
+]
+
+self.draw =  [
+	pygame.draw.rect(screen, (139, 0, 0), [217, 130, 6, 405]),
+	pygame.draw.rect(screen, (139, 0, 0), [853, 130, 6, 405]),
+	pygame.draw.rect(screen, (139, 0, 0), [80, 86, 6, 405]),
+	pygame.draw.rect(screen, (139, 0, 0), [991, 86, 6, 405]),
+	pygame.draw.rect(screen, (139, 0, 0), [352, 171, 6, 405]),
+	pygame.draw.rect(screen, (139, 0, 0), [720, 171, 6, 405]),
+	pygame.draw.rect(screen, (139, 0, 0), [540, 199, 6, 377])
+
+]
+
+self.death_zones =  [
+	pygame.draw.rect(screen, (139, 0, 0), [34, 503, 130, 73]),
+	pygame.draw.rect(screen, (139, 0, 0), [916, 503, 130, 73]),
+	pygame.draw.rect(screen, (139, 0, 0), [164, 545, 130, 31]),
+	pygame.draw.rect(screen, (139, 0, 0), [786, 545, 130, 31])
+
+]
+
+self.win_zones =  [
+	pygame.draw.rect(screen, (47, 237, 237), [505, 524, 79, 21]),
+	pygame.draw.rect(screen, (47, 237, 237), [1054, 32, 13, 46])
+
+]
+===============
+
+Praise_the_EYE(525, 289, 1)
+
+dsnclass.Text("icu", (540, 392), 60, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [0, 248, 30, 328]),       
+        pygame.draw.rect(screen, BLACK, [0, 5, 30, 203]),
+        pygame.draw.rect(screen, BLACK, [1050, 5, 30, 203]),      
+        pygame.draw.rect(screen, BLACK, [15, 5, 1053, 59]),       
+        pygame.draw.rect(screen, BLACK, [12, 333, 1056, 243]),    
+        pygame.draw.rect(screen, BLACK, [1050, 248, 30, 328]),    
+        pygame.draw.rect(screen, BLACK, [29, 296, 90, 11]),       
+        pygame.draw.rect(screen, BLACK, [985, 306, 64, 28]),      
+        pygame.draw.rect(screen, BLACK, [31, 306, 64, 28]),       
+        pygame.draw.rect(screen, BLACK, [960, 296, 90, 11]),      
+        pygame.draw.rect(screen, BLACK, [908, 264, 90, 11]),      
+        pygame.draw.rect(screen, BLACK, [751, 244, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [214, 244, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [356, 222, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [595, 222, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [520, 310, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [514, 316, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [534, 310, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [540, 316, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [57, 63, 6, 50]),
+        pygame.draw.rect(screen, BLACK, [481, 63, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [481, 221, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [580, 221, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [580, 63, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [389, 63, 6, 81]),
+        pygame.draw.rect(screen, BLACK, [670, 63, 6, 81]),
+        pygame.draw.rect(screen, BLACK, [82, 264, 90, 11]),
+        pygame.draw.rect(screen, BLACK, [675, 111, 336, 8]),
+        pygame.draw.rect(screen, BLACK, [1005, 63, 6, 50]),
+        pygame.draw.rect(screen, BLACK, [57, 111, 336, 8]),
+        pygame.draw.rect(screen, BLACK, [388, 136, 98, 8]),
+        pygame.draw.rect(screen, BLACK, [580, 136, 97, 8]),
+        pygame.draw.rect(screen, BLACK, [501, 71, 64, 44]),
+        pygame.draw.rect(screen, BLACK, [524, 301, 12, 35])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, CYAN, [1066, 208, 14, 40]),
+        pygame.draw.rect(screen, CYAN, [0, 208, 14, 40])
+]
+
+==================
+
+Living_room(465, 511, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 26, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1054, 0, 26, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 21]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 555, 1080, 21]),
+        pygame.draw.rect(screen, (150, 75, 0), [26, 522, 1028, 33]),
+        pygame.draw.rect(screen, (0, 0, 0), [26, 539, 1028, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [95, 522, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [273, 522, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [462, 522, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [652, 522, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [845, 522, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [1023, 522, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [128, 540, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [305, 540, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [492, 540, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [673, 540, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [870, 540, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [1044, 540, 1, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [683, 475, 72, 36]),
+        pygame.draw.rect(screen, (150, 75, 0), [687, 511, 18, 11]),
+        pygame.draw.rect(screen, (150, 75, 0), [733, 511, 18, 11]),
+        pygame.draw.rect(screen, (150, 75, 0), [840, 511, 18, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [833, 440, 110, 71]),
+        pygame.draw.rect(screen, (0, 0, 0), [893, 414, 53, 97]),
+        pygame.draw.rect(screen, (255, 182, 193), [552, 502, 21, 20]),
+        pygame.draw.rect(screen, (255, 182, 193), [760, 502, 21, 20]),
+        pygame.draw.rect(screen, (255, 182, 193), [562, 512, 54, 10]),
+        pygame.draw.rect(screen, (255, 182, 193), [760, 512, 54, 10]),
+        pygame.draw.rect(screen, (150, 75, 0), [922, 511, 18, 11]),
+        pygame.draw.rect(screen, (150, 75, 0), [962, 412, 87, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [967, 508, 9, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [1039, 508, 9, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [962, 412, 87, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [962, 456, 70, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [962, 502, 83, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [1044, 413, 1, 89]),
+        pygame.draw.rect(screen, (0, 0, 0), [1031, 413, 1, 89]),
+        pygame.draw.rect(screen, (0, 0, 0), [962, 434, 13, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [962, 483, 13, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [974, 479, 2, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [974, 430, 2, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [37, 370, 50, 116]),
+        pygame.draw.rect(screen, (52, 52, 52), [37, 370, 78, 25]),
+        pygame.draw.rect(screen, (52, 52, 52), [37, 461, 78, 25]),
+        pygame.draw.rect(screen, (30, 144, 255), [87, 395, 9, 66]),
+        pygame.draw.rect(screen, (52, 52, 52), [72, 358, 32, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [77, 348, 23, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [74, 320, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [69, 306, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [64, 292, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [59, 278, 5, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [31, 486, 92, 36]),
+        pygame.draw.rect(screen, (52, 52, 52), [79, 334, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [93, 334, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [98, 320, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [93, 306, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [88, 292, 5, 14]),
+        pygame.draw.rect(screen, (52, 52, 52), [84, 278, 5, 14]),
+        pygame.draw.rect(screen, (150, 75, 0), [404, 493, 10, 29]),
+        pygame.draw.rect(screen, (150, 75, 0), [954, 405, 97, 7]),
+        pygame.draw.rect(screen, (150, 75, 0), [802, 365, 97, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [373, 458, 55, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [392, 461, 34, 10]),
+        pygame.draw.rect(screen, (150, 75, 0), [225, 493, 10, 29]),
+        pygame.draw.rect(screen, (150, 75, 0), [211, 476, 218, 19]),
+        pygame.draw.rect(screen, (150, 75, 0), [205, 471, 234, 7]),
+        pygame.draw.rect(screen, (150, 75, 0), [629, 343, 97, 7]),
+        pygame.draw.rect(screen, (150, 75, 0), [634, 349, 88, 5]),
+        pygame.draw.rect(screen, (150, 75, 0), [806, 371, 88, 5]),
+        pygame.draw.rect(screen, (150, 75, 0), [820, 376, 62, 8]),
+        pygame.draw.rect(screen, (150, 75, 0), [647, 354, 62, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [621, 36, 154, 263]),
+        pygame.draw.rect(screen, (0, 0, 0), [867, 36, 154, 263]),
+        pygame.draw.rect(screen, (150, 75, 0), [70, 60, 316, 190]),
+        pygame.draw.rect(screen, (52, 52, 52), [77, 68, 301, 174]),
+        pygame.draw.rect(screen, (30, 144, 255), [875, 43, 139, 248]),
+        pygame.draw.rect(screen, (30, 144, 255), [628, 43, 139, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [628, 119, 139, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [628, 216, 139, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [875, 216, 139, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [875, 119, 139, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [437, 326, 123, 10])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (0, 0, 0), [552, 511, 5, 5]),
+        pygame.draw.rect(screen, (1, 100, 32), [766, 503, 6, 6]),
+        pygame.draw.rect(screen, (1, 100, 32), [559, 503, 6, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [760, 511, 5, 5]),
+        pygame.draw.rect(screen, (194, 57, 33), [561, 517, 15, 5]),
+        pygame.draw.rect(screen, (194, 57, 33), [771, 517, 15, 5]),
+        pygame.draw.rect(screen, (1, 100, 32), [165, 522, 321, 9]),
+        pygame.draw.rect(screen, (1, 100, 32), [171, 531, 305, 9]),
+        pygame.draw.rect(screen, (1, 100, 32), [202, 540, 243, 9]),
+        pygame.draw.rect(screen, (255, 165, 0), [219, 522, 206, 13]),
+        pygame.draw.rect(screen, (194, 57, 33), [684, 476, 70, 34]),
+        pygame.draw.rect(screen, (194, 57, 33), [834, 441, 111, 69]),
+        pygame.draw.rect(screen, (194, 57, 33), [894, 415, 51, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [838, 504, 104, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [838, 447, 1, 57]),
+        pygame.draw.rect(screen, (0, 0, 0), [941, 418, 1, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [898, 418, 1, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [838, 444, 61, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [857, 467, 28, 17]),
+        pygame.draw.rect(screen, (255, 255, 255), [860, 470, 14, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [860, 481, 14, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [860, 470, 4, 12]),
+        pygame.draw.rect(screen, (52, 52, 52), [1032, 413, 9, 89]),
+        pygame.draw.rect(screen, (52, 52, 52), [1035, 413, 9, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [1035, 497, 9, 5]),
+        pygame.draw.rect(screen, (125, 125, 125), [1041, 418, 3, 79]),
+        pygame.draw.rect(screen, (0, 0, 0), [899, 417, 42, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [839, 498, 102, 6]),
+        pygame.draw.rect(screen, (125, 125, 125), [442, 21, 114, 247]),
+        pygame.draw.rect(screen, (125, 125, 125), [442, 331, 114, 171]),
+        pygame.draw.rect(screen, (52, 52, 52), [435, 496, 117, 26]),
+        pygame.draw.rect(screen, (52, 52, 52), [548, 496, 14, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 236, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 205, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 173, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 142, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 109, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 74, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 43, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 364, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 395, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 427, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 456, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [443, 482, 113, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 21, 1, 22]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 143, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 174, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 110, 1, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 44, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 237, 1, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 336, 1, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 396, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 457, 1, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 74, 1, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 365, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 428, 1, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 483, 1, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 457, 1, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 396, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 333, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 237, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 110, 1, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 44, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 206, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 206, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 143, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 75, 1, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 18, 1, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 365, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 427, 1, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [505, 483, 1, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [484, 174, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 174, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 110, 1, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 44, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 237, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 334, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 396, 1, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 457, 1, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 483, 1, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 428, 1, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 365, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 206, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 143, 1, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 75, 1, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 20, 1, 23]),
+        pygame.draw.rect(screen, (235, 195, 65), [405, 455, 7, 5]),
+        pygame.draw.rect(screen, (50, 205, 50), [415, 455, 7, 5]),
+        pygame.draw.rect(screen, (30, 144, 255), [395, 455, 8, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [212, 478, 217, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [628, 92, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [684, 84, 58, 9]),
+        pygame.draw.rect(screen, (235, 195, 65), [982, 43, 32, 27]),
+        pygame.draw.rect(screen, (255, 255, 255), [875, 70, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [926, 62, 39, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [950, 43, 17, 21]),
+        pygame.draw.rect(screen, (255, 255, 255), [709, 93, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [649, 81, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [628, 73, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [675, 67, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [678, 51, 45, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [720, 48, 47, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [628, 70, 30, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [628, 44, 30, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [642, 51, 27, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [668, 43, 52, 5]),
+        pygame.draw.rect(screen, (255, 255, 255), [714, 62, 52, 5]),
+        pygame.draw.rect(screen, (255, 255, 255), [651, 59, 37, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [705, 54, 33, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [692, 73, 66, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [875, 60, 66, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [875, 44, 66, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [883, 50, 66, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [929, 44, 30, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [648, 354, 61, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [821, 376, 61, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [92, 82, 9, 145]),
+        pygame.draw.rect(screen, (255, 255, 255), [161, 82, 9, 145]),
+        pygame.draw.rect(screen, (255, 255, 255), [92, 150, 78, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [200, 80, 74, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [200, 220, 74, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [230, 82, 9, 145]),
+        pygame.draw.rect(screen, (255, 255, 255), [289, 88, 9, 45]),
+        pygame.draw.rect(screen, (255, 255, 255), [289, 79, 76, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [359, 151, 9, 61]),
+        pygame.draw.rect(screen, (255, 255, 255), [353, 142, 9, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [289, 133, 67, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [301, 218, 58, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [354, 210, 9, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [295, 210, 9, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [437, 325, 123, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [437, 261, 123, 10]),
+        pygame.draw.rect(screen, (255, 182, 193), [570, 498, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [575, 494, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [578, 489, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [561, 494, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [564, 487, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [567, 480, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [778, 501, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [781, 495, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [786, 490, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [769, 495, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [766, 491, 7, 8]),
+        pygame.draw.rect(screen, (255, 182, 193), [763, 485, 7, 8])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [377, 455, 6, 5])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [96, 395, 21, 66]),
+        pygame.draw.rect(screen, (47, 237, 237), [106, 399, 14, 59])
+]
+
+self.respawn_zones =  [
+]
+
+===============
+
+Drop_potential(43, 531, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 35, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1045, 0, 35, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [20, 0, 1038, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [20, 551, 1038, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 480, 190, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [449, 389, 10, 81]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 470, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [890, 480, 190, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [640, 441, 190, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [35, 403, 190, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [855, 403, 190, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [259, 441, 190, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [246, 374, 213, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [473, 389, 145, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [630, 374, 213, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [629, 347, 144, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [939, 298, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [630, 389, 10, 81]),
+        pygame.draw.rect(screen, (0, 0, 0), [316, 347, 144, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 323, 131, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [793, 323, 131, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [316, 241, 144, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [629, 241, 144, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [450, 178, 10, 187]),
+        pygame.draw.rect(screen, (0, 0, 0), [608, 178, 10, 187]),
+        pygame.draw.rect(screen, (0, 0, 0), [629, 178, 10, 187]),
+        pygame.draw.rect(screen, (0, 0, 0), [471, 374, 158, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 269, 131, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 208, 131, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [793, 269, 131, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [793, 208, 131, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [35, 298, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [934, 171, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [629, 172, 251, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [209, 172, 251, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [473, 178, 10, 187]),
+        pygame.draw.rect(screen, (0, 0, 0), [473, 135, 10, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [608, 135, 10, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [418, 144, 251, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [473, 115, 146, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [35, 171, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [35, 95, 174, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 95, 174, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [713, 120, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [264, 120, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [264, 71, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [712, 71, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [570, 43, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [408, 43, 111, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [450, 480, 190, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [642, 388, 59, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [388, 388, 59, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [421, 186, 27, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [641, 255, 39, 47]),
+        pygame.draw.rect(screen, (0, 0, 0), [409, 255, 39, 47]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 521, 817, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [130, 530, 808, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [641, 186, 27, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [983, 108, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [36, 416, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [983, 416, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [983, 311, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [36, 311, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [36, 184, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [983, 184, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [511, 45, 8, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [570, 45, 8, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [537, 78, 17, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [36, 108, 61, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [36, 26, 227, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [824, 26, 220, 17])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (0, 0, 0), [487, 163, 116, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [494, 182, 104, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [499, 201, 95, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [504, 222, 85, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [510, 242, 75, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [515, 262, 66, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [520, 282, 57, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 304, 50, 8])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [483, 126, 125, 18])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [473, 401, 145, 23]),
+        pygame.draw.rect(screen, (47, 237, 237), [483, 25, 125, 18])
+]
+
+==========
+
+Four_Keys_of_Light(25, 228, 1)
+
+kogclass.Text("These shall guide you to your journey", (540, 92), 60, "impact", (125, 125, 125), None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 24, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [4, 0, 1068, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [4, 328, 1068, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [21, 249, 263, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [314, 214, 263, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [609, 188, 263, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [909, 153, 159, 248]),
+        pygame.draw.rect(screen, (0, 0, 0), [1056, 153, 24, 423]),
+        pygame.draw.rect(screen, (0, 0, 0), [1056, 0, 24, 82]),
+        pygame.draw.rect(screen, (0, 0, 0), [1072, 80, 8, 76])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 165, 0), [24, 255, 254, 10]),
+        pygame.draw.rect(screen, (255, 165, 0), [318, 219, 254, 10]),
+        pygame.draw.rect(screen, (255, 165, 0), [613, 194, 254, 10]),
+        pygame.draw.rect(screen, (255, 165, 0), [912, 157, 150, 10]),
+        pygame.draw.rect(screen, (255, 255, 255), [60, 266, 9, 224]),
+        pygame.draw.rect(screen, (255, 255, 255), [359, 230, 9, 224]),
+        pygame.draw.rect(screen, (255, 255, 255), [657, 205, 9, 224]),
+        pygame.draw.rect(screen, (50, 205, 50), [511, 240, 9, 47]),
+        pygame.draw.rect(screen, (50, 205, 50), [809, 215, 9, 47]),
+        pygame.draw.rect(screen, (50, 205, 50), [210, 276, 9, 47]),
+        pygame.draw.rect(screen, (47, 237, 237), [70, 266, 150, 9]),
+        pygame.draw.rect(screen, (235, 195, 65), [70, 481, 139, 9]),
+        pygame.draw.rect(screen, (235, 195, 65), [369, 445, 141, 9]),
+        pygame.draw.rect(screen, (235, 195, 65), [667, 420, 141, 9]),
+        pygame.draw.rect(screen, (235, 195, 65), [936, 384, 95, 9]),
+        pygame.draw.rect(screen, (255, 0, 0), [809, 263, 9, 167]),
+        pygame.draw.rect(screen, (255, 0, 0), [511, 288, 9, 167]),
+        pygame.draw.rect(screen, (255, 182, 193), [70, 276, 9, 166]),
+        pygame.draw.rect(screen, (255, 182, 193), [369, 240, 9, 166]),
+        pygame.draw.rect(screen, (255, 182, 193), [667, 215, 9, 166]),
+        pygame.draw.rect(screen, (255, 182, 193), [936, 178, 9, 166]),
+        pygame.draw.rect(screen, (50, 205, 50), [1032, 178, 9, 47]),
+        pygame.draw.rect(screen, (47, 237, 237), [936, 168, 105, 9]),
+        pygame.draw.rect(screen, (47, 237, 237), [369, 230, 151, 9]),
+        pygame.draw.rect(screen, (47, 237, 237), [667, 205, 151, 9]),
+        pygame.draw.rect(screen, (30, 144, 255), [70, 443, 139, 9]),
+        pygame.draw.rect(screen, (30, 144, 255), [369, 407, 141, 9]),
+        pygame.draw.rect(screen, (30, 144, 255), [667, 382, 141, 9]),
+        pygame.draw.rect(screen, (30, 144, 255), [936, 345, 95, 9]),
+        pygame.draw.rect(screen, (255, 0, 0), [210, 324, 9, 167]),
+        pygame.draw.rect(screen, (181, 60, 177), [501, 240, 9, 166]),
+        pygame.draw.rect(screen, (181, 60, 177), [200, 276, 9, 166]),
+        pygame.draw.rect(screen, (181, 60, 177), [799, 215, 9, 166]),
+        pygame.draw.rect(screen, (181, 60, 177), [1022, 178, 9, 166]),
+        pygame.draw.rect(screen, (52, 52, 52), [69, 452, 141, 29]),
+        pygame.draw.rect(screen, (52, 52, 52), [368, 416, 143, 29]),
+        pygame.draw.rect(screen, (52, 52, 52), [666, 391, 143, 29]),
+        pygame.draw.rect(screen, (50, 205, 50), [80, 276, 119, 166]),
+        pygame.draw.rect(screen, (255, 0, 0), [379, 240, 121, 166]),
+        pygame.draw.rect(screen, (47, 237, 237), [946, 178, 75, 166]),
+        pygame.draw.rect(screen, (150, 75, 0), [222, 266, 55, 310]),
+        pygame.draw.rect(screen, (150, 75, 0), [522, 230, 49, 346]),
+        pygame.draw.rect(screen, (150, 75, 0), [1043, 168, 19, 408]),
+        pygame.draw.rect(screen, (1, 100, 32), [40, 266, 19, 279]),
+        pygame.draw.rect(screen, (1, 100, 32), [339, 230, 19, 279]),
+        pygame.draw.rect(screen, (1, 100, 32), [637, 205, 19, 279]),
+        pygame.draw.rect(screen, (255, 255, 255), [926, 168, 9, 225]),
+        pygame.draw.rect(screen, (139, 0, 0), [613, 205, 23, 371]),
+        pygame.draw.rect(screen, (1, 100, 32), [915, 168, 10, 279]),
+        pygame.draw.rect(screen, (139, 0, 0), [319, 230, 19, 346]),
+        pygame.draw.rect(screen, (139, 0, 0), [24, 266, 15, 309]),
+        pygame.draw.rect(screen, (125, 125, 125), [41, 547, 180, 29]),
+        pygame.draw.rect(screen, (125, 125, 125), [638, 486, 180, 90]),
+        pygame.draw.rect(screen, (125, 125, 125), [340, 511, 180, 65]),
+        pygame.draw.rect(screen, (52, 52, 52), [916, 448, 126, 128]),
+        pygame.draw.rect(screen, (255, 255, 255), [874, 408, 30, 168]),
+        pygame.draw.rect(screen, (255, 255, 255), [578, 408, 30, 168]),
+        pygame.draw.rect(screen, (255, 255, 255), [284, 408, 30, 168]),
+        pygame.draw.rect(screen, (52, 52, 52), [24, 15, 1032, 67]),
+        pygame.draw.rect(screen, (255, 0, 0), [1032, 226, 9, 167]),
+        pygame.draw.rect(screen, (125, 125, 125), [936, 355, 95, 28]),
+        pygame.draw.rect(screen, (0, 0, 0), [286, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [293, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [300, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [307, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [600, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [591, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [582, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [878, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [887, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [895, 406, 4, 170]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 417, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 438, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 462, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 509, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 536, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 557, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [280, 483, 37, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [573, 483, 37, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [869, 483, 37, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [574, 417, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [574, 435, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [574, 460, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [574, 513, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [574, 539, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [574, 562, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 417, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 436, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 457, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 510, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 537, 37, 2]),
+        pygame.draw.rect(screen, (0, 0, 0), [871, 561, 37, 2]),
+        pygame.draw.rect(screen, (139, 0, 0), [912, 168, 2, 408]),
+        pygame.draw.rect(screen, (150, 75, 0), [820, 205, 46, 371]),
+        pygame.draw.rect(screen, (235, 195, 65), [677, 215, 121, 166])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1062, 82, 10, 71])
+]
+
+========
+
+Rook_and_descent(938, 54, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 34, 34, 542]),
+        pygame.draw.rect(screen, (0, 0, 0), [1046, 34, 34, 542]),
+        pygame.draw.rect(screen, (0, 0, 0), [34, 72, 103, 504]),
+        pygame.draw.rect(screen, (0, 0, 0), [943, 72, 103, 504]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 261, 748, 315]),
+        pygame.draw.rect(screen, (0, 0, 0), [705, 221, 80, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [173, 241, 61, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [285, 221, 80, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [402, 191, 80, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [586, 191, 80, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 196, 10, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [530, 184, 10, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [530, 6, 10, 140]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 6, 3, 140]),
+        pygame.draw.rect(screen, (0, 0, 0), [542, 6, 3, 140]),
+        pygame.draw.rect(screen, (0, 0, 0), [524, 184, 3, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [524, 184, 20, 3]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 246, 20, 3]),
+        pygame.draw.rect(screen, (0, 0, 0), [525, 143, 20, 3]),
+        pygame.draw.rect(screen, (0, 0, 0), [903, 196, 10, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [844, 241, 61, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [586, 245, 80, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [402, 245, 80, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [59, 20, 467, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 20, 467, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [155, 34, 372, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [545, 34, 372, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [269, 48, 257, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [543, 184, 3, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [269, 37, 3, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 48, 257, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 62, 148, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [377, 62, 148, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [543, 76, 102, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [424, 76, 102, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 90, 62, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [464, 90, 62, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 103, 35, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 103, 35, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [544, 117, 17, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [508, 117, 17, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [798, 37, 3, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [689, 51, 3, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [376, 51, 3, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [424, 64, 3, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [642, 64, 3, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [603, 80, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [464, 80, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 93, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [576, 93, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [558, 107, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [508, 107, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [155, 25, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [59, 11, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [1008, 11, 3, 17]),
+        pygame.draw.rect(screen, (0, 0, 0), [914, 25, 3, 17])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 255, 255), [514, 510, 34, 66]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 341, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 384, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 429, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 476, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 524, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 562, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [203, 341, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [203, 430, 1, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [203, 524, 1, 39]),
+        pygame.draw.rect(screen, (255, 255, 255), [240, 385, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [284, 343, 1, 42]),
+        pygame.draw.rect(screen, (255, 255, 255), [284, 430, 1, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [240, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [321, 385, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [321, 477, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [366, 341, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [366, 430, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [321, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [407, 476, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [366, 524, 1, 39]),
+        pygame.draw.rect(screen, (255, 255, 255), [284, 525, 1, 38]),
+        pygame.draw.rect(screen, (255, 255, 255), [407, 384, 1, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [366, 262, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [284, 262, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [203, 262, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [448, 341, 1, 43]),
+        pygame.draw.rect(screen, (255, 255, 255), [448, 430, 1, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [448, 525, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [407, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [501, 384, 1, 45]),
+        pygame.draw.rect(screen, (255, 255, 255), [501, 476, 1, 49]),
+        pygame.draw.rect(screen, (255, 255, 255), [240, 476, 1, 49]),
+        pygame.draw.rect(screen, (255, 255, 255), [240, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [322, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [406, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [499, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [539, 429, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [501, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [590, 385, 1, 45]),
+        pygame.draw.rect(screen, (255, 255, 255), [590, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [539, 342, 1, 43]),
+        pygame.draw.rect(screen, (255, 255, 255), [538, 262, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [637, 262, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [637, 429, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [590, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [684, 385, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [684, 477, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [684, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [637, 525, 1, 38]),
+        pygame.draw.rect(screen, (255, 255, 255), [590, 476, 1, 49]),
+        pygame.draw.rect(screen, (255, 255, 255), [637, 342, 1, 42]),
+        pygame.draw.rect(screen, (255, 255, 255), [734, 342, 1, 42]),
+        pygame.draw.rect(screen, (255, 255, 255), [734, 431, 1, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [684, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [775, 562, 1, 14]),
+        pygame.draw.rect(screen, (255, 255, 255), [734, 524, 1, 39]),
+        pygame.draw.rect(screen, (255, 255, 255), [734, 261, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [775, 477, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [829, 429, 1, 48]),
+        pygame.draw.rect(screen, (255, 255, 255), [829, 524, 1, 39]),
+        pygame.draw.rect(screen, (255, 255, 255), [775, 384, 1, 46]),
+        pygame.draw.rect(screen, (255, 255, 255), [775, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [829, 341, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [872, 298, 1, 44]),
+        pygame.draw.rect(screen, (255, 255, 255), [872, 384, 1, 47]),
+        pygame.draw.rect(screen, (255, 255, 255), [872, 477, 1, 49]),
+        pygame.draw.rect(screen, (255, 255, 255), [872, 563, 1, 13]),
+        pygame.draw.rect(screen, (255, 255, 255), [829, 261, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [448, 262, 1, 37]),
+        pygame.draw.rect(screen, (255, 255, 255), [34, 71, 1, 505]),
+        pygame.draw.rect(screen, (255, 255, 255), [1045, 71, 1, 505]),
+        pygame.draw.rect(screen, (255, 255, 255), [973, 72, 1, 504]),
+        pygame.draw.rect(screen, (255, 255, 255), [165, 298, 746, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [69, 72, 1, 504]),
+        pygame.draw.rect(screen, (255, 255, 255), [104, 72, 1, 504]),
+        pygame.draw.rect(screen, (255, 255, 255), [1008, 72, 1, 504]),
+        pygame.draw.rect(screen, (255, 255, 255), [0, 41, 1, 535]),
+        pygame.draw.rect(screen, (255, 255, 255), [1079, 41, 1, 535])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [530, 146, 10, 38])
+]
+
+====================
+
+Portal_to_I(532, 372, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 20, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1060, 0, 20, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [9, 386, 1071, 190]),
+        pygame.draw.rect(screen, (0, 0, 0), [9, 0, 1071, 22]),
+        pygame.draw.rect(screen, (0, 0, 0), [531, 126, 10, 238]),
+        pygame.draw.rect(screen, (0, 0, 0), [555, 376, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [423, 376, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [293, 354, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [686, 354, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [154, 255, 749, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [820, 326, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [20, 345, 247, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [802, 345, 258, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [937, 294, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [157, 326, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [41, 294, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [939, 201, 121, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [21, 201, 121, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [212, 177, 121, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [725, 177, 121, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [796, 226, 83, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [171, 226, 83, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [531, 0, 10, 71]),
+        pygame.draw.rect(screen, (0, 0, 0), [423, 155, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [554, 155, 10, 87]),
+        pygame.draw.rect(screen, (0, 0, 0), [554, 0, 10, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [509, 155, 10, 87]),
+        pygame.draw.rect(screen, (0, 0, 0), [509, 0, 10, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [554, 155, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [554, 53, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [425, 53, 94, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [19, 23, 485, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [568, 23, 492, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [581, 34, 479, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [16, 34, 479, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [16, 45, 468, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [593, 45, 468, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [425, 64, 223, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [423, 166, 85, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [565, 166, 83, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [189, 266, 341, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [542, 266, 328, 7])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 255, 255), [261, 351, 1, 42]),
+        pygame.draw.rect(screen, (255, 255, 255), [21, 400, 1039, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [807, 351, 1, 41]),
+        pygame.draw.rect(screen, (255, 255, 255), [261, 409, 1, 41]),
+        pygame.draw.rect(screen, (255, 255, 255), [807, 350, 253, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [807, 449, 253, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [19, 350, 243, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [19, 450, 243, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [261, 408, 547, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [269, 465, 530, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [269, 418, 530, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [807, 409, 1, 41]),
+        pygame.draw.rect(screen, (255, 255, 255), [798, 419, 1, 47]),
+        pygame.draw.rect(screen, (255, 255, 255), [269, 419, 1, 47]),
+        pygame.draw.rect(screen, (255, 255, 255), [261, 476, 1, 100]),
+        pygame.draw.rect(screen, (255, 255, 255), [807, 476, 1, 100]),
+        pygame.draw.rect(screen, (255, 255, 255), [261, 392, 547, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [261, 476, 547, 1])
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [533, 71, 6, 55])
+]
+
+==============
+
+Drop_pyramid(55, 87, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 50, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1030, 0, 50, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1, 0, 1076, 50]),
+        pygame.draw.rect(screen, (0, 0, 0), [1, 526, 1076, 50]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 105, 331, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 155, 433, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [647, 155, 433, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 205, 517, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [563, 205, 517, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [84, 255, 907, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 305, 197, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 355, 287, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [793, 355, 287, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 405, 401, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [679, 405, 401, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 455, 501, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [579, 455, 501, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 505, 529, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [551, 505, 529, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [749, 105, 331, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [475, 105, 130, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [510, 155, 60, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [883, 305, 197, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [360, 328, 350, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [447, 380, 185, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [515, 432, 50, 5])
+]
+
+self.draw =  [
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [1019, 510, 11, 16])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [50, 510, 11, 16])
+]
+
+
+========
+
+Choose_a_pill(25, 97, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 18, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1062, 0, 18, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [13, 110, 336, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [371, 110, 336, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [158, 88, 5, 353]),
+        pygame.draw.rect(screen, (0, 0, 0), [922, 88, 5, 353]),
+        pygame.draw.rect(screen, (0, 0, 0), [368, 110, 10, 369]),
+        pygame.draw.rect(screen, (0, 0, 0), [707, 110, 10, 369]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 479, 1080, 97]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 27]),
+        pygame.draw.rect(screen, (0, 0, 0), [340, 110, 10, 369]),
+        pygame.draw.rect(screen, (0, 0, 0), [734, 110, 10, 369]),
+        pygame.draw.rect(screen, (0, 0, 0), [735, 110, 336, 10])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (30, 144, 255), [378, 119, 329, 27]),
+        pygame.draw.rect(screen, (52, 52, 52), [378, 179, 329, 27]),
+        pygame.draw.rect(screen, (30, 144, 255), [378, 452, 329, 27]),
+        pygame.draw.rect(screen, (52, 52, 52), [378, 390, 329, 27]),
+        pygame.draw.rect(screen, (125, 125, 125), [238, 120, 9, 345]),
+        pygame.draw.rect(screen, (125, 125, 125), [832, 120, 9, 345]),
+        pygame.draw.rect(screen, (125, 125, 125), [18, 452, 245, 6]),
+        pygame.draw.rect(screen, (125, 125, 125), [814, 452, 248, 6]),
+        pygame.draw.rect(screen, (139, 0, 0), [28, 139, 117, 113]),
+        pygame.draw.rect(screen, (139, 0, 0), [936, 139, 117, 113]),
+        pygame.draw.rect(screen, (150, 75, 0), [936, 323, 117, 113]),
+        pygame.draw.rect(screen, (150, 75, 0), [29, 323, 117, 113]),
+        pygame.draw.rect(screen, (1, 100, 32), [717, 179, 17, 239]),
+        pygame.draw.rect(screen, (255, 165, 0), [350, 179, 19, 239])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [717, 456, 17, 23])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [350, 456, 18, 23])
+]
+
+===============
+
+Pots(874, 20, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 33, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1047, 0, 33, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 14]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 481, 1080, 95]),
+        pygame.draw.rect(screen, (0, 0, 0), [608, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [552, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [360, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [299, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [107, 36, 202, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 36, 79, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [107, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [69, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [237, 287, 202, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 287, 202, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 287, 177, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [172, 287, 5, 40]),
+        pygame.draw.rect(screen, (0, 0, 0), [237, 287, 5, 40]),
+        pygame.draw.rect(screen, (0, 0, 0), [434, 287, 5, 40]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 287, 5, 40]),
+        pygame.draw.rect(screen, (0, 0, 0), [688, 287, 5, 40]),
+        pygame.draw.rect(screen, (0, 0, 0), [753, 287, 5, 40]),
+        pygame.draw.rect(screen, (0, 0, 0), [360, 36, 202, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [172, 324, 70, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [434, 324, 62, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [688, 324, 70, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [950, 365, 70, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [950, 287, 5, 85]),
+        pygame.draw.rect(screen, (0, 0, 0), [753, 287, 202, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [983, 287, 37, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [1015, 290, 5, 82]),
+        pygame.draw.rect(screen, (0, 0, 0), [982, 263, 5, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [982, 163, 5, 82]),
+        pygame.draw.rect(screen, (0, 0, 0), [719, 163, 5, 82]),
+        pygame.draw.rect(screen, (0, 0, 0), [460, 163, 5, 82]),
+        pygame.draw.rect(screen, (0, 0, 0), [205, 163, 5, 82]),
+        pygame.draw.rect(screen, (0, 0, 0), [811, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [608, 36, 213, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [869, 44, 10, 158]),
+        pygame.draw.rect(screen, (0, 0, 0), [869, 36, 203, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [68, 459, 948, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [192, 413, 687, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [117, 436, 848, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [335, 393, 401, 10])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [33, 14, 45, 22]),
+        pygame.draw.rect(screen, (47, 237, 237), [464, 368, 128, 10])
+]
+
+====================
+
+Praise_the_EYE(525, 289, 1)
+
+dsnclass.Text("icu", (540, 392), 60, "impact", GREY, None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, BLACK, [0, 248, 30, 328]),       
+        pygame.draw.rect(screen, BLACK, [0, 5, 30, 203]),
+        pygame.draw.rect(screen, BLACK, [1050, 5, 30, 203]),      
+        pygame.draw.rect(screen, BLACK, [15, 5, 1053, 59]),       
+        pygame.draw.rect(screen, BLACK, [12, 333, 1056, 243]),    
+        pygame.draw.rect(screen, BLACK, [1050, 248, 30, 328]),    
+        pygame.draw.rect(screen, BLACK, [29, 296, 90, 11]),       
+        pygame.draw.rect(screen, BLACK, [985, 306, 64, 28]),      
+        pygame.draw.rect(screen, BLACK, [31, 306, 64, 28]),       
+        pygame.draw.rect(screen, BLACK, [960, 296, 90, 11]),      
+        pygame.draw.rect(screen, BLACK, [908, 264, 90, 11]),      
+        pygame.draw.rect(screen, BLACK, [751, 244, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [214, 244, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [356, 222, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [595, 222, 112, 11]),
+        pygame.draw.rect(screen, BLACK, [520, 310, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [514, 316, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [534, 310, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [540, 316, 6, 35]),
+        pygame.draw.rect(screen, BLACK, [57, 63, 6, 50]),
+        pygame.draw.rect(screen, BLACK, [481, 63, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [481, 221, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [580, 221, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [580, 63, 6, 99]),
+        pygame.draw.rect(screen, BLACK, [389, 63, 6, 81]),
+        pygame.draw.rect(screen, BLACK, [670, 63, 6, 81]),
+        pygame.draw.rect(screen, BLACK, [82, 264, 90, 11]),
+        pygame.draw.rect(screen, BLACK, [675, 111, 336, 8]),
+        pygame.draw.rect(screen, BLACK, [1005, 63, 6, 50]),
+        pygame.draw.rect(screen, BLACK, [57, 111, 336, 8]),
+        pygame.draw.rect(screen, BLACK, [388, 136, 98, 8]),
+        pygame.draw.rect(screen, BLACK, [580, 136, 97, 8]),
+        pygame.draw.rect(screen, BLACK, [501, 71, 64, 44]),
+        pygame.draw.rect(screen, BLACK, [524, 301, 12, 35])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, CYAN, [1066, 208, 14, 40]),
+        pygame.draw.rect(screen, CYAN, [0, 208, 14, 40])
+]
+
+=================
+
+icu_2(525, 289, 1)
+
+kogclass.Text("icu", (540, 492), 60, "impact", (125, 125, 125), None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 248, 30, 328]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 30, 203]),
+        pygame.draw.rect(screen, (0, 0, 0), [1050, 5, 30, 203]),
+        pygame.draw.rect(screen, (0, 0, 0), [15, 5, 1053, 59]),
+        pygame.draw.rect(screen, (0, 0, 0), [1050, 248, 30, 328]),
+        pygame.draw.rect(screen, (0, 0, 0), [29, 296, 90, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [960, 296, 90, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [908, 264, 90, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [751, 244, 112, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [214, 244, 112, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [356, 222, 112, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [595, 222, 112, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [520, 310, 6, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [514, 316, 6, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [534, 310, 6, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [540, 316, 6, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [57, 63, 6, 50]),
+        pygame.draw.rect(screen, (0, 0, 0), [481, 63, 6, 99]),
+        pygame.draw.rect(screen, (0, 0, 0), [481, 221, 6, 99]),
+        pygame.draw.rect(screen, (0, 0, 0), [580, 221, 6, 99]),
+        pygame.draw.rect(screen, (0, 0, 0), [580, 63, 6, 99]),
+        pygame.draw.rect(screen, (0, 0, 0), [389, 63, 6, 81]),
+        pygame.draw.rect(screen, (0, 0, 0), [670, 63, 6, 81]),
+        pygame.draw.rect(screen, (0, 0, 0), [82, 264, 90, 11]),
+        pygame.draw.rect(screen, (0, 0, 0), [1005, 63, 6, 50]),
+        pygame.draw.rect(screen, (0, 0, 0), [57, 111, 336, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [388, 136, 98, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [524, 301, 12, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [12, 408, 1056, 168]),
+        pygame.draw.rect(screen, (0, 0, 0), [985, 306, 64, 105]),
+        pygame.draw.rect(screen, (0, 0, 0), [31, 306, 64, 111]),
+        pygame.draw.rect(screen, (0, 0, 0), [580, 136, 97, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [586, 128, 86, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [62, 105, 328, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [676, 105, 328, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [501, 71, 64, 44]),
+        pygame.draw.rect(screen, (0, 0, 0), [395, 128, 86, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [675, 111, 336, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [110, 376, 164, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [798, 376, 176, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [795, 318, 129, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [144, 318, 129, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [560, 347, 326, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [185, 347, 317, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [520, 351, 21, 57])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 255, 255), [505, 108, 56, 3]),
+        pygame.draw.rect(screen, (255, 255, 255), [559, 79, 2, 31]),
+        pygame.draw.rect(screen, (125, 125, 125), [367, 227, 89, 6]),
+        pygame.draw.rect(screen, (125, 125, 125), [606, 227, 89, 6]),
+        pygame.draw.rect(screen, (125, 125, 125), [764, 249, 89, 6]),
+        pygame.draw.rect(screen, (125, 125, 125), [227, 249, 89, 6]),
+        pygame.draw.rect(screen, (255, 255, 255), [85, 271, 85, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [911, 271, 85, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [29, 303, 88, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [963, 303, 88, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [505, 79, 2, 31]),
+        pygame.draw.rect(screen, (255, 255, 255), [30, 423, 2, 153]),
+        pygame.draw.rect(screen, (255, 255, 255), [1049, 423, 2, 153]),
+        pygame.draw.rect(screen, (255, 255, 255), [36, 429, 1006, 2]),
+        pygame.draw.rect(screen, (255, 255, 255), [12, 415, 1057, 2]),
+        pygame.draw.rect(screen, (255, 255, 255), [526, 317, 9, 9])
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1066, 208, 14, 40]),
+        pygame.draw.rect(screen, (47, 237, 237), [0, 208, 14, 40])
+]
+
+==================
+
+Skull_1(29, 269, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 26, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1054, 0, 26, 192]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 306, 1080, 270]),
+        pygame.draw.rect(screen, (0, 0, 0), [252, 280, 565, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [977, 273, 14, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [1072, 192, 8, 123])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1060, 192, 12, 114])
+]
+
+=====================
+
+Skull_2(29, 269, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 26, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1054, 0, 26, 192]),
+        pygame.draw.rect(screen, (0, 0, 0), [1072, 192, 8, 123]),
+        pygame.draw.rect(screen, (0, 0, 0), [873, 22, 14, 151]),
+        pygame.draw.rect(screen, (0, 0, 0), [164, 22, 14, 151]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 282, 1080, 294]),
+        pygame.draw.rect(screen, (0, 0, 0), [977, 226, 14, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [245, 251, 565, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [209, 20, 634, 113])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 255, 255), [275, 36, 36, 29]),
+        pygame.draw.rect(screen, (255, 255, 255), [723, 36, 36, 29]),
+        pygame.draw.rect(screen, (255, 255, 255), [264, 285, 518, 15]),
+        pygame.draw.rect(screen, (255, 255, 255), [180, 480, 701, 15]),
+        pygame.draw.rect(screen, (255, 255, 255), [62, 390, 16, 186]),
+        pygame.draw.rect(screen, (255, 255, 255), [986, 390, 16, 186]),
+        pygame.draw.rect(screen, (255, 255, 255), [121, 437, 16, 139]),
+        pygame.draw.rect(screen, (255, 255, 255), [923, 437, 16, 139]),
+        pygame.draw.rect(screen, (255, 255, 255), [181, 499, 16, 77]),
+        pygame.draw.rect(screen, (255, 255, 255), [865, 499, 16, 77])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1060, 192, 12, 90])
+]
+
+=============
+
+Mind_The_Gap_2(12, 200, 1)
+
+kogclass.Text("Mind the Gap", (535, 100), 45, "impact", (0, 0, 0), None)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 10, 210]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [1070, 0, 10, 180]),
+        pygame.draw.rect(screen, (0, 0, 0), [1070, 210, 10, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 210, 313, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [408, 210, 43, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [270, 210, 43, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 210, 212, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [540, 210, 331, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [896, 210, 43, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [848, 210, 23, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [824, 210, 23, 366]),
+        pygame.draw.rect(screen, (0, 0, 0), [540, 210, 218, 366])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1070, 180, 20, 30])
+]
+
+==============
+
+Multyping_Blocks(52, 88, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 44, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 501, 1080, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [61, 347, 958, 139]),
+        pygame.draw.rect(screen, (52, 52, 52), [96, 334, 886, 139]),
+        pygame.draw.rect(screen, (125, 125, 125), [134, 313, 821, 139]),
+        pygame.draw.rect(screen, (0, 0, 0), [162, 289, 761, 139]),
+        pygame.draw.rect(screen, (52, 52, 52), [192, 268, 700, 139]),
+        pygame.draw.rect(screen, (125, 125, 125), [219, 250, 651, 139]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [401, 121, 279, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [743, 121, 279, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [1036, 0, 44, 76]),
+        pygame.draw.rect(screen, (0, 0, 0), [1036, 112, 44, 445]),
+        pygame.draw.rect(screen, (0, 0, 0), [1059, 67, 21, 65]),
+        pygame.draw.rect(screen, (0, 0, 0), [124, 498, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [961, 498, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [859, 498, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [225, 498, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [62, 121, 279, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [401, 142, 30, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [650, 142, 30, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [742, 142, 30, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [742, 158, 10, 72]),
+        pygame.draw.rect(screen, (0, 0, 0), [668, 158, 10, 72]),
+        pygame.draw.rect(screen, (0, 0, 0), [401, 158, 10, 72]),
+        pygame.draw.rect(screen, (0, 0, 0), [329, 158, 10, 72]),
+        pygame.draw.rect(screen, (0, 0, 0), [310, 142, 30, 10])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 255, 255), [237, 414, 615, 9]),
+        pygame.draw.rect(screen, (255, 255, 255), [237, 256, 615, 107]),
+        pygame.draw.rect(screen, (52, 52, 52), [258, 262, 565, 80]),
+        pygame.draw.rect(screen, (125, 125, 125), [278, 267, 520, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [295, 270, 480, 43]),
+        pygame.draw.rect(screen, (255, 255, 255), [66, 352, 23, 130]),
+        pygame.draw.rect(screen, (255, 255, 255), [988, 352, 26, 130])
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1048, 76, 11, 36]),
+        pygame.draw.rect(screen, (47, 237, 237), [532, 487, 32, 13])
+]
+
+==============
+
+Well_Walls(533, 45, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1055, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1062, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 551, 1062, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [50, 102, 340, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [76, 413, 295, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [51, 523, 975, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [51, 63, 973, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [437, 223, 10, 142]),
+        pygame.draw.rect(screen, (52, 52, 52), [447, 246, 10, 118]),
+        pygame.draw.rect(screen, (52, 52, 52), [621, 246, 10, 118]),
+        pygame.draw.rect(screen, (125, 125, 125), [457, 338, 164, 26]),
+        pygame.draw.rect(screen, (52, 52, 52), [457, 349, 164, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [437, 364, 204, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [700, 413, 295, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [700, 134, 323, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [50, 134, 323, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [396, 101, 10, 378]),
+        pygame.draw.rect(screen, (0, 0, 0), [371, 134, 10, 264]),
+        pygame.draw.rect(screen, (0, 0, 0), [694, 134, 10, 264]),
+        pygame.draw.rect(screen, (0, 0, 0), [419, 415, 238, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [671, 101, 10, 378]),
+        pygame.draw.rect(screen, (0, 0, 0), [671, 498, 354, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [687, 102, 337, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [647, 415, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [419, 415, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [631, 223, 10, 142]),
+        pygame.draw.rect(screen, (0, 0, 0), [610, 71, 10, 53]),
+        pygame.draw.rect(screen, (0, 0, 0), [456, 71, 10, 53]),
+        pygame.draw.rect(screen, (0, 0, 0), [201, 195, 170, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [1015, 383, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [715, 207, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [704, 195, 170, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [902, 195, 121, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [53, 195, 121, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [51, 383, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [53, 206, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [1013, 206, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [864, 207, 10, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [892, 207, 10, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [174, 207, 10, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [454, 193, 170, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [51, 498, 355, 12]),
+        pygame.draw.rect(screen, (52, 52, 52), [81, 424, 283, 12]),
+        pygame.draw.rect(screen, (52, 52, 52), [707, 424, 283, 12]),
+        pygame.draw.rect(screen, (125, 125, 125), [88, 436, 267, 42]),
+        pygame.draw.rect(screen, (125, 125, 125), [715, 436, 267, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [201, 207, 10, 19]),
+        pygame.draw.rect(screen, (52, 52, 52), [725, 207, 139, 19]),
+        pygame.draw.rect(screen, (52, 52, 52), [211, 207, 140, 19]),
+        pygame.draw.rect(screen, (125, 125, 125), [63, 207, 111, 19]),
+        pygame.draw.rect(screen, (125, 125, 125), [902, 207, 111, 19]),
+        pygame.draw.rect(screen, (0, 0, 0), [469, 105, 138, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [62, 226, 122, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [892, 226, 122, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [723, 226, 151, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [201, 226, 151, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [351, 207, 10, 96]),
+        pygame.draw.rect(screen, (0, 0, 0), [351, 317, 10, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [715, 317, 10, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [163, 226, 10, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [213, 226, 10, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [903, 226, 10, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [852, 226, 10, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [721, 439, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [967, 439, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [340, 439, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [93, 439, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [69, 236, 10, 34]),
+        pygame.draw.rect(screen, (0, 0, 0), [998, 236, 10, 34])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (181, 60, 177), [530, 535, 22, 16]),
+        pygame.draw.rect(screen, (255, 182, 193), [407, 535, 123, 16]),
+        pygame.draw.rect(screen, (255, 182, 193), [552, 535, 120, 16]),
+        pygame.draw.rect(screen, (52, 52, 52), [429, 427, 218, 19]),
+        pygame.draw.rect(screen, (125, 125, 125), [429, 444, 218, 12]),
+        pygame.draw.rect(screen, (125, 125, 125), [466, 97, 144, 8]),
+        pygame.draw.rect(screen, (52, 52, 52), [466, 75, 144, 22])
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [457, 323, 164, 15]),
+        pygame.draw.rect(screen, (47, 237, 237), [457, 291, 11, 40]),
+        pygame.draw.rect(screen, (47, 237, 237), [610, 291, 11, 40]),
+        pygame.draw.rect(screen, (47, 237, 237), [383, 535, 24, 16]),
+        pygame.draw.rect(screen, (47, 237, 237), [672, 535, 24, 16])
+]
+
+self.respawn_zones =  [
+]
+=====================
+
+Three_evil_blocks(42, 303, 1)
+
+self.draw =  [
+        pygame.draw.rect(screen, (52, 52, 52), [23, 457, 1034, 119])
+]
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1079, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [1057, 457, 23, 119]),
+        pygame.draw.rect(screen, (0, 0, 0), [1071, 397, 9, 76]),
+        pygame.draw.rect(screen, (0, 0, 0), [433, 360, 217, 216]),
+        pygame.draw.rect(screen, (0, 0, 0), [433, 0, 217, 216]),
+        pygame.draw.rect(screen, (0, 0, 0), [96, 360, 217, 216]),
+        pygame.draw.rect(screen, (0, 0, 0), [96, 0, 217, 216]),
+        pygame.draw.rect(screen, (0, 0, 0), [777, 360, 217, 216]),
+        pygame.draw.rect(screen, (0, 0, 0), [777, 0, 217, 216]),
+        pygame.draw.rect(screen, (0, 0, 0), [1057, 0, 23, 411]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 23, 133]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 187, 23, 389]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 121, 7, 73])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (194, 57, 33), [109, 463, 192, 112]),
+        pygame.draw.rect(screen, (194, 57, 33), [445, 463, 192, 112]),
+        pygame.draw.rect(screen, (194, 57, 33), [791, 463, 192, 112]),
+        pygame.draw.rect(screen, (139, 0, 0), [132, 540, 140, 36]),
+        pygame.draw.rect(screen, (139, 0, 0), [471, 540, 140, 36]),
+        pygame.draw.rect(screen, (139, 0, 0), [816, 540, 140, 36]),
+        pygame.draw.rect(screen, (255, 0, 0), [792, 463, 191, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [445, 463, 191, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [109, 463, 191, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [117, 472, 176, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [453, 472, 176, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [799, 472, 176, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [7, 133, 10, 54])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1062, 411, 9, 46])
+]
+
+self.draw = [
+        pygame.draw.rect(screen, (30, 144, 255), [108, 13, 192, 112]),
+        pygame.draw.rect(screen, (30, 144, 255), [445, 13, 192, 112]),
+        pygame.draw.rect(screen, (30, 144, 255), [792, 13, 192, 112]),
+        pygame.draw.rect(screen, (47, 237, 237), [123, 13, 161, 62]),
+        pygame.draw.rect(screen, (47, 237, 237), [462, 13, 161, 62]),
+        pygame.draw.rect(screen, (47, 237, 237), [808, 13, 161, 62]),
+        pygame.draw.rect(screen, (52, 52, 52), [23, 13, 1034, 120])
+]
+
+========================
+
+The_road(40, 284, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 21, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 5, 1080, 144]),
+        pygame.draw.rect(screen, (0, 0, 0), [946, 320, 133, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [1059, 5, 21, 571]),
+        pygame.draw.rect(screen, (0, 0, 0), [338, 320, 169, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [655, 320, 156, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [1042, 149, 18, 111]),
+        pygame.draw.rect(screen, (0, 0, 0), [1042, 395, 18, 111]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 506, 1080, 70]),
+        pygame.draw.rect(screen, (0, 0, 0), [40, 320, 165, 15])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (52, 52, 52), [21, 477, 1021, 29]),
+        pygame.draw.rect(screen, (52, 52, 52), [21, 149, 1021, 29]),
+        pygame.draw.rect(screen, (125, 125, 125), [21, 335, 1021, 141]),
+        pygame.draw.rect(screen, (125, 125, 125), [21, 179, 1021, 141]),
+        pygame.draw.rect(screen, (125, 125, 125), [21, 314, 19, 29]),
+        pygame.draw.rect(screen, (125, 125, 125), [507, 314, 148, 29]),
+        pygame.draw.rect(screen, (125, 125, 125), [205, 314, 133, 29]),
+        pygame.draw.rect(screen, (255, 255, 255), [337, 320, 170, 15]),
+        pygame.draw.rect(screen, (255, 255, 255), [946, 320, 114, 15]),
+        pygame.draw.rect(screen, (125, 125, 125), [811, 314, 135, 29]),
+        pygame.draw.rect(screen, (125, 125, 125), [1032, 260, 16, 60]),
+        pygame.draw.rect(screen, (125, 125, 125), [1032, 335, 16, 60])
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1048, 335, 11, 60]),
+        pygame.draw.rect(screen, (47, 237, 237), [1048, 260, 11, 60])
+]
+
+self.respawn_zones =  [
+]
+
+=========================
+
+use_the_walls_but_I_have_support(537, 359, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 31, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1049, 0, 31, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [4, 0, 1072, 27]),
+        pygame.draw.rect(screen, (0, 0, 0), [4, 549, 1072, 27]),
+        pygame.draw.rect(screen, (0, 0, 0), [33, 386, 37, 33]),
+        pygame.draw.rect(screen, (0, 0, 0), [1010, 386, 37, 33]),
+        pygame.draw.rect(screen, (0, 0, 0), [73, 371, 935, 16]),
+        pygame.draw.rect(screen, (0, 0, 0), [73, 343, 935, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [530, 0, 25, 311]),
+        pygame.draw.rect(screen, (0, 0, 0), [530, 382, 25, 194])
+]
+
+self.draw =  [
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [537, 311, 10, 32])
+]
+
+self.respawn_zones =  [
+]
+
+======================
+
+Family_fued(76, 322, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [1055, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 550, 1080, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 42, 930, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [63, 26, 12, 524]),
+        pygame.draw.rect(screen, (0, 0, 0), [1005, 26, 12, 524]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 333, 65, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [940, 333, 65, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [767, 310, 140, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [171, 310, 140, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [362, 310, 140, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [566, 310, 140, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [130, 323, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [940, 323, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 492, 930, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [157, 526, 7, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [79, 526, 7, 7]),
+        pygame.draw.rect(screen, (52, 52, 52), [143, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [136, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [128, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [120, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [112, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [104, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [97, 515, 5, 5])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (150, 75, 0), [25, 26, 38, 524]),
+        pygame.draw.rect(screen, (150, 75, 0), [1017, 26, 38, 524]),
+        pygame.draw.rect(screen, (52, 52, 52), [75, 26, 930, 16]),
+        pygame.draw.rect(screen, (125, 125, 125), [75, 502, 930, 48]),
+        pygame.draw.rect(screen, (255, 0, 0), [964, 540, 24, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [956, 524, 8, 16]),
+        pygame.draw.rect(screen, (255, 0, 0), [988, 524, 8, 16]),
+        pygame.draw.rect(screen, (255, 0, 0), [963, 516, 8, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [981, 516, 8, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [973, 506, 6, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [943, 500, 6, 52]),
+        pygame.draw.rect(screen, (52, 52, 52), [898, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [887, 522, 12, 8]),
+        pygame.draw.rect(screen, (52, 52, 52), [881, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [808, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [859, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [854, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [859, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [908, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [920, 521, 6, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [914, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [824, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [812, 522, 12, 8]),
+        pygame.draw.rect(screen, (52, 52, 52), [767, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [761, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [755, 521, 6, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [785, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [786, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [780, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [681, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [569, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [681, 510, 6, 34]),
+        pygame.draw.rect(screen, (52, 52, 52), [566, 510, 6, 34]),
+        pygame.draw.rect(screen, (52, 52, 52), [669, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [553, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [656, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [539, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [655, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [539, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [651, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [534, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [639, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [521, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [633, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [515, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [627, 532, 7, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [510, 532, 7, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [620, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [503, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [614, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [497, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [704, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [715, 521, 6, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [710, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [482, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [476, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [470, 521, 6, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [733, 499, 6, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [453, 499, 6, 54]),
+        pygame.draw.rect(screen, (235, 195, 65), [241, 514, 24, 23]),
+        pygame.draw.rect(screen, (255, 255, 255), [206, 514, 24, 23]),
+        pygame.draw.rect(screen, (255, 0, 0), [170, 514, 24, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [92, 521, 58, 21]),
+        pygame.draw.rect(screen, (0, 0, 0), [89, 510, 65, 21]),
+        pygame.draw.rect(screen, (30, 144, 255), [90, 511, 63, 18]),
+        pygame.draw.rect(screen, (30, 144, 255), [93, 523, 56, 18]),
+        pygame.draw.rect(screen, (0, 0, 0), [597, 500, 6, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [839, 501, 6, 49]),
+        pygame.draw.rect(screen, (0, 0, 0), [93, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [101, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [109, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [117, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [141, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [148, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [148, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [141, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [109, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [117, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [101, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [93, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [105, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [112, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [120, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [128, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [135, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [142, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [97, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [78, 527, 8, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [156, 527, 8, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [176, 520, 12, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [212, 520, 12, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [247, 520, 12, 12]),
+        pygame.draw.rect(screen, (255, 255, 255), [251, 524, 4, 4]),
+        pygame.draw.rect(screen, (255, 255, 255), [216, 524, 4, 4]),
+        pygame.draw.rect(screen, (255, 255, 255), [180, 524, 4, 4]),
+        pygame.draw.rect(screen, (235, 195, 65), [148, 109, 787, 201]),
+        pygame.draw.rect(screen, (235, 195, 65), [148, 320, 787, 42]),
+        pygame.draw.rect(screen, (235, 195, 65), [311, 308, 51, 15]),
+        pygame.draw.rect(screen, (235, 195, 65), [502, 308, 64, 15]),
+        pygame.draw.rect(screen, (235, 195, 65), [706, 308, 61, 15]),
+        pygame.draw.rect(screen, (235, 195, 65), [907, 308, 28, 15]),
+        pygame.draw.rect(screen, (235, 195, 65), [148, 308, 23, 15]),
+        pygame.draw.rect(screen, (30, 144, 255), [75, 52, 930, 57]),
+        pygame.draw.rect(screen, (30, 144, 255), [75, 362, 930, 130]),
+        pygame.draw.rect(screen, (30, 144, 255), [75, 343, 73, 19]),
+        pygame.draw.rect(screen, (30, 144, 255), [935, 343, 70, 19]),
+        pygame.draw.rect(screen, (30, 144, 255), [935, 108, 70, 215]),
+        pygame.draw.rect(screen, (30, 144, 255), [75, 108, 73, 215]),
+        pygame.draw.rect(screen, (30, 144, 255), [75, 118, 55, 215]),
+        pygame.draw.rect(screen, (30, 144, 255), [950, 118, 55, 215]),
+        pygame.draw.rect(screen, (30, 144, 255), [935, 318, 5, 29]),
+        pygame.draw.rect(screen, (30, 144, 255), [140, 318, 8, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [335, 52, 1, 442]),
+        pygame.draw.rect(screen, (0, 0, 0), [532, 52, 1, 442]),
+        pygame.draw.rect(screen, (0, 0, 0), [739, 52, 1, 442]),
+        pygame.draw.rect(screen, (0, 0, 0), [934, 52, 1, 442]),
+        pygame.draw.rect(screen, (0, 0, 0), [148, 52, 1, 442]),
+        pygame.draw.rect(screen, (0, 0, 0), [69, 109, 939, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [69, 362, 939, 1])
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [951, 327, 53, 6])
+]
+
+self.respawn_zones =  [
+]
+
+
+==============
+
+No_Network(897, 299, 1)
+
+self.draw = [pygame.draw.rect(screen, (30, 144, 255), [102, 52, 903, 440])]
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [1055, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 550, 1080, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 42, 930, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [63, 26, 12, 524]),
+        pygame.draw.rect(screen, (0, 0, 0), [1005, 26, 12, 524]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 492, 930, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [157, 526, 7, 7]),
+        pygame.draw.rect(screen, (0, 0, 0), [79, 526, 7, 7]),
+        pygame.draw.rect(screen, (52, 52, 52), [143, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [136, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [128, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [120, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [112, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [104, 515, 5, 5]),
+        pygame.draw.rect(screen, (52, 52, 52), [97, 515, 5, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [909, 318, 88, 174]),
+        pygame.draw.rect(screen, (0, 0, 0), [940, 142, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [919, 131, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [959, 130, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [904, 114, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [929, 122, 30, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [914, 105, 25, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [973, 114, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [939, 97, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [887, 95, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [949, 105, 25, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [897, 86, 21, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [967, 86, 21, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [916, 78, 52, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [988, 93, 10, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [767, 279, 88, 213]),
+        pygame.draw.rect(screen, (0, 0, 0), [606, 255, 88, 237]),
+        pygame.draw.rect(screen, (0, 0, 0), [453, 220, 85, 272]),
+        pygame.draw.rect(screen, (0, 0, 0), [298, 185, 85, 307]),
+        pygame.draw.rect(screen, (0, 0, 0), [156, 140, 85, 354]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 112, 27, 380]),
+        pygame.draw.rect(screen, (0, 0, 0), [75, 51, 27, 24]),
+        pygame.draw.rect(screen, (1, 100, 32), [910, 319, 86, 172]),
+        pygame.draw.rect(screen, (1, 100, 32), [299, 186, 83, 305]),
+        pygame.draw.rect(screen, (1, 100, 32), [454, 221, 83, 271]),
+        pygame.draw.rect(screen, (1, 100, 32), [607, 256, 86, 235]),
+        pygame.draw.rect(screen, (1, 100, 32), [768, 280, 86, 211]),
+        pygame.draw.rect(screen, (1, 100, 32), [157, 141, 83, 351]),
+        pygame.draw.rect(screen, (1, 100, 32), [74, 114, 27, 378]),
+        pygame.draw.rect(screen, (1, 100, 32), [74, 53, 27, 21])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (150, 75, 0), [25, 26, 38, 524]),
+        pygame.draw.rect(screen, (150, 75, 0), [1017, 26, 38, 524]),
+        pygame.draw.rect(screen, (52, 52, 52), [75, 26, 930, 16]),
+        pygame.draw.rect(screen, (125, 125, 125), [75, 502, 930, 48]),
+        pygame.draw.rect(screen, (255, 0, 0), [964, 540, 24, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [956, 524, 8, 16]),
+        pygame.draw.rect(screen, (255, 0, 0), [988, 524, 8, 16]),
+        pygame.draw.rect(screen, (255, 0, 0), [963, 516, 8, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [981, 516, 8, 8]),
+        pygame.draw.rect(screen, (255, 0, 0), [973, 506, 6, 26]),
+        pygame.draw.rect(screen, (0, 0, 0), [943, 500, 6, 52]),
+        pygame.draw.rect(screen, (52, 52, 52), [898, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [887, 522, 12, 8]),
+        pygame.draw.rect(screen, (52, 52, 52), [881, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [808, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [859, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [854, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [859, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [908, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [920, 521, 6, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [914, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [824, 509, 6, 35]),
+        pygame.draw.rect(screen, (52, 52, 52), [812, 522, 12, 8]),
+        pygame.draw.rect(screen, (52, 52, 52), [767, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [761, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [755, 521, 6, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [785, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [786, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [780, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [681, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [569, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [681, 510, 6, 34]),
+        pygame.draw.rect(screen, (52, 52, 52), [566, 510, 6, 34]),
+        pygame.draw.rect(screen, (52, 52, 52), [669, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [553, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [656, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [539, 535, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [655, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [539, 509, 17, 9]),
+        pygame.draw.rect(screen, (52, 52, 52), [651, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [534, 515, 7, 23]),
+        pygame.draw.rect(screen, (52, 52, 52), [639, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [521, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [633, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [515, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [627, 532, 7, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [510, 532, 7, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [620, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [503, 524, 7, 13]),
+        pygame.draw.rect(screen, (52, 52, 52), [614, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [497, 509, 7, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [704, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [715, 521, 6, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [710, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [482, 513, 6, 28]),
+        pygame.draw.rect(screen, (52, 52, 52), [476, 516, 6, 21]),
+        pygame.draw.rect(screen, (52, 52, 52), [470, 521, 6, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [733, 499, 6, 54]),
+        pygame.draw.rect(screen, (0, 0, 0), [453, 499, 6, 54]),
+        pygame.draw.rect(screen, (235, 195, 65), [241, 514, 24, 23]),
+        pygame.draw.rect(screen, (255, 255, 255), [206, 514, 24, 23]),
+        pygame.draw.rect(screen, (255, 0, 0), [170, 514, 24, 23]),
+        pygame.draw.rect(screen, (0, 0, 0), [92, 521, 58, 21]),
+        pygame.draw.rect(screen, (0, 0, 0), [89, 510, 65, 21]),
+        pygame.draw.rect(screen, (30, 144, 255), [90, 511, 63, 18]),
+        pygame.draw.rect(screen, (30, 144, 255), [93, 523, 56, 18]),
+        pygame.draw.rect(screen, (0, 0, 0), [597, 500, 6, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [839, 501, 6, 49]),
+        pygame.draw.rect(screen, (0, 0, 0), [93, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [101, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [109, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [117, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [141, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [148, 515, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [148, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [141, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [125, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [133, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [109, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [117, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [101, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [93, 522, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [105, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [112, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [120, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [128, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [135, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [142, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [97, 532, 4, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [78, 527, 8, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [156, 527, 8, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [176, 520, 12, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [212, 520, 12, 12]),
+        pygame.draw.rect(screen, (0, 0, 0), [247, 520, 12, 12]),
+        pygame.draw.rect(screen, (255, 255, 255), [251, 524, 4, 4]),
+        pygame.draw.rect(screen, (255, 255, 255), [216, 524, 4, 4]),
+        pygame.draw.rect(screen, (255, 255, 255), [180, 524, 4, 4]),
+        pygame.draw.rect(screen, (30, 144, 255), [89, 75, 86, 37])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [882, 72, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [894, 82, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [905, 93, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [918, 104, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [930, 115, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [943, 127, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [955, 139, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [967, 150, 13, 13]),
+        pygame.draw.rect(screen, (255, 0, 0), [890, 78, 10, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [901, 89, 10, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [912, 99, 10, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [925, 112, 10, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [938, 123, 10, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [949, 135, 10, 10]),
+        pygame.draw.rect(screen, (255, 0, 0), [962, 146, 10, 10])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [75, 75, 14, 37])
+]
+
+self.respawn_zones =  [
+]
+
+==================================
+
+Six_blocks(19, 53, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 15, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1065, 0, 15, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 561, 1080, 15]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 342, 327, 202]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 68, 327, 202]),
+        pygame.draw.rect(screen, (0, 0, 0), [375, 68, 327, 202]),
+        pygame.draw.rect(screen, (0, 0, 0), [747, 68, 327, 202]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [375, 342, 327, 202]),
+        pygame.draw.rect(screen, (0, 0, 0), [747, 342, 327, 202])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (255, 165, 0), [1055, 305, 10, 37]),
+        pygame.draw.rect(screen, (30, 144, 255), [1055, 270, 10, 35]),
+        pygame.draw.rect(screen, (125, 125, 125), [1055, 35, 10, 33]),
+        pygame.draw.rect(screen, (235, 195, 65), [385, 352, 10, 182]),
+        pygame.draw.rect(screen, (255, 165, 0), [46, 79, 265, 10]),
+        pygame.draw.rect(screen, (50, 205, 50), [46, 234, 265, 10]),
+        pygame.draw.rect(screen, (255, 255, 255), [46, 158, 265, 10]),
+        pygame.draw.rect(screen, (255, 255, 255), [46, 148, 265, 10]),
+        pygame.draw.rect(screen, (255, 255, 255), [46, 168, 265, 10]),
+        pygame.draw.rect(screen, (50, 205, 50), [46, 224, 265, 10]),
+        pygame.draw.rect(screen, (50, 205, 50), [46, 214, 265, 10]),
+        pygame.draw.rect(screen, (255, 165, 0), [46, 89, 265, 10]),
+        pygame.draw.rect(screen, (255, 165, 0), [46, 99, 265, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 164, 42, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [185, 149, 1, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 160, 1, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [207, 160, 1, 9]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 159, 2, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [167, 156, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [168, 156, 4, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [171, 152, 1, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [171, 152, 5, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [175, 149, 1, 3]),
+        pygame.draw.rect(screen, (0, 0, 0), [175, 149, 20, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [202, 159, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [202, 155, 1, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [197, 155, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [196, 150, 1, 6]),
+        pygame.draw.rect(screen, (0, 0, 0), [194, 150, 3, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [165, 169, 3, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [205, 169, 3, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [205, 169, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [168, 169, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [168, 173, 5, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [201, 173, 5, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [200, 173, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [173, 173, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [173, 177, 27, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [179, 150, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [180, 153, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [181, 156, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [182, 159, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [183, 161, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [187, 161, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [188, 157, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [189, 154, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [190, 150, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [166, 160, 4, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [170, 161, 4, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [174, 161, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [178, 162, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [188, 162, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [192, 161, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [197, 160, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [186, 166, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [191, 167, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [196, 168, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [201, 169, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [180, 166, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [175, 167, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [170, 168, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [166, 169, 6, 1]),
+        pygame.draw.rect(screen, (0, 0, 0), [183, 167, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [182, 169, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [181, 172, 1, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [187, 167, 1, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [188, 170, 1, 4]),
+        pygame.draw.rect(screen, (0, 0, 0), [189, 172, 1, 6]),
+        pygame.draw.rect(screen, (255, 0, 0), [639, 189, 53, 71]),
+        pygame.draw.rect(screen, (255, 255, 255), [640, 350, 53, 71]),
+        pygame.draw.rect(screen, (255, 0, 0), [757, 350, 53, 71]),
+        pygame.draw.rect(screen, (255, 255, 255), [757, 189, 53, 71]),
+        pygame.draw.rect(screen, (235, 195, 65), [385, 78, 10, 182]),
+        pygame.draw.rect(screen, (1, 100, 32), [1055, 78, 10, 182]),
+        pygame.draw.rect(screen, (1, 100, 32), [1055, 352, 10, 182]),
+        pygame.draw.rect(screen, (139, 0, 0), [409, 524, 285, 10]),
+        pygame.draw.rect(screen, (139, 0, 0), [756, 78, 285, 10]),
+        pygame.draw.rect(screen, (255, 182, 193), [756, 523, 285, 10]),
+        pygame.draw.rect(screen, (255, 182, 193), [408, 78, 285, 10]),
+        pygame.draw.rect(screen, (125, 125, 125), [26, 357, 285, 10]),
+        pygame.draw.rect(screen, (125, 125, 125), [26, 357, 10, 175]),
+        pygame.draw.rect(screen, (125, 125, 125), [301, 357, 10, 83]),
+        pygame.draw.rect(screen, (125, 125, 125), [201, 447, 10, 83]),
+        pygame.draw.rect(screen, (125, 125, 125), [26, 523, 185, 10]),
+        pygame.draw.rect(screen, (125, 125, 125), [201, 437, 110, 10]),
+        pygame.draw.rect(screen, (52, 52, 52), [215, 452, 93, 81]),
+        pygame.draw.rect(screen, (125, 125, 125), [35, 366, 267, 73]),
+        pygame.draw.rect(screen, (125, 125, 125), [35, 366, 170, 160]),
+        pygame.draw.rect(screen, (255, 255, 255), [35, 366, 36, 36]),
+        pygame.draw.rect(screen, (255, 255, 255), [220, 457, 36, 36]),
+        pygame.draw.rect(screen, (150, 75, 0), [604, 421, 36, 36]),
+        pygame.draw.rect(screen, (150, 75, 0), [810, 421, 36, 36]),
+        pygame.draw.rect(screen, (50, 205, 50), [810, 152, 36, 36]),
+        pygame.draw.rect(screen, (50, 205, 50), [602, 152, 36, 36])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (255, 0, 0), [15, 544, 5, 17]),
+        pygame.draw.rect(screen, (255, 0, 0), [1060, 544, 5, 17])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [15, 270, 10, 35])
+]
+
+self.respawn_zones =  [
+        pygame.draw.rect(screen, (50, 205, 50), [15, 305, 10, 37])
+]
+
+=============================
+
+Three_paths(49, 58, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1055, 0, 25, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 551, 1080, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [1045, 140, 10, 115]),
+        pygame.draw.rect(screen, (0, 0, 0), [1045, 319, 10, 115]),
+        pygame.draw.rect(screen, (0, 0, 0), [1045, 498, 10, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [1045, 21, 10, 55]),
+        pygame.draw.rect(screen, (0, 0, 0), [68, 288, 240, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [734, 288, 240, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [67, 92, 425, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [567, 92, 425, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 388, 992, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 31]),
+        pygame.draw.rect(screen, (0, 0, 0), [524, 47, 10, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [1029, 229, 10, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [1029, 307, 10, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [1029, 297, 10, 41]),
+        pygame.draw.rect(screen, (0, 0, 0), [414, 288, 215, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [130, 491, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [235, 459, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [340, 491, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [550, 491, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [445, 459, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [655, 459, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [865, 459, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [760, 491, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [970, 491, 105, 32]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 491, 1080, 79]),
+        pygame.draw.rect(screen, (0, 0, 0), [25, 459, 105, 32])
+]
+
+self.draw =  [
+]
+
+self.death_zones =  [
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [1044, 76, 11, 64]),
+        pygame.draw.rect(screen, (47, 237, 237), [1044, 255, 11, 64]),
+        pygame.draw.rect(screen, (47, 237, 237), [1044, 434, 11, 64])
+]
+
+self.respawn_zones =  [
+]
+
+================================
+
+Blue_Portal(528, 485, 1)
+
+self.platforms =  [
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 30, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [1050, 0, 30, 576]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 0, 1080, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [0, 546, 1080, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [51, 517, 335, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [690, 517, 335, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [690, 497, 10, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [724, 468, 246, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [965, 448, 5, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [376, 497, 324, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [387, 508, 302, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [99, 468, 246, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 394, 135, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [465, 300, 135, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [637, 426, 130, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [352, 362, 81, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 328, 246, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [635, 362, 81, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [394, 290, 36, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [99, 448, 5, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [1021, 303, 5, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [635, 290, 36, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [491, 257, 86, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [376, 497, 10, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [378, 165, 5, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [684, 165, 5, 30]),
+        pygame.draw.rect(screen, (0, 0, 0), [765, 328, 261, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [684, 160, 339, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [47, 160, 336, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [530, 305, 5, 165]),
+        pygame.draw.rect(screen, (0, 0, 0), [678, 27, 5, 162]),
+        pygame.draw.rect(screen, (0, 0, 0), [383, 190, 301, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [384, 27, 5, 162]),
+        pygame.draw.rect(screen, (0, 0, 0), [384, 184, 298, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [667, 30, 10, 153]),
+        pygame.draw.rect(screen, (0, 0, 0), [390, 30, 10, 153]),
+        pygame.draw.rect(screen, (0, 0, 0), [656, 42, 10, 141]),
+        pygame.draw.rect(screen, (0, 0, 0), [401, 31, 265, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [401, 42, 10, 141]),
+        pygame.draw.rect(screen, (0, 0, 0), [645, 53, 10, 130]),
+        pygame.draw.rect(screen, (0, 0, 0), [412, 42, 243, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [412, 53, 10, 130]),
+        pygame.draw.rect(screen, (0, 0, 0), [634, 64, 10, 119]),
+        pygame.draw.rect(screen, (0, 0, 0), [423, 53, 221, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [423, 64, 10, 119]),
+        pygame.draw.rect(screen, (0, 0, 0), [623, 75, 10, 108]),
+        pygame.draw.rect(screen, (0, 0, 0), [434, 64, 199, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [434, 75, 10, 108]),
+        pygame.draw.rect(screen, (0, 0, 0), [612, 86, 10, 97]),
+        pygame.draw.rect(screen, (0, 0, 0), [445, 75, 177, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [445, 86, 10, 97]),
+        pygame.draw.rect(screen, (0, 0, 0), [601, 97, 10, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [456, 86, 155, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [456, 97, 10, 86]),
+        pygame.draw.rect(screen, (0, 0, 0), [590, 108, 10, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [467, 97, 133, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [467, 108, 10, 75]),
+        pygame.draw.rect(screen, (0, 0, 0), [579, 119, 10, 64]),
+        pygame.draw.rect(screen, (0, 0, 0), [478, 108, 111, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [478, 119, 10, 64]),
+        pygame.draw.rect(screen, (0, 0, 0), [568, 130, 10, 53]),
+        pygame.draw.rect(screen, (0, 0, 0), [489, 119, 89, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [489, 130, 10, 53]),
+        pygame.draw.rect(screen, (0, 0, 0), [557, 141, 10, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [500, 130, 67, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [500, 141, 10, 42]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 141, 335, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [47, 30, 5, 116]),
+        pygame.draw.rect(screen, (0, 0, 0), [682, 141, 336, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [1016, 29, 5, 117]),
+        pygame.draw.rect(screen, (30, 144, 255), [511, 152, 10, 31]),
+        pygame.draw.rect(screen, (30, 144, 255), [546, 152, 10, 31]),
+        pygame.draw.rect(screen, (30, 144, 255), [511, 141, 45, 10]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 303, 5, 25]),
+        pygame.draw.rect(screen, (0, 0, 0), [1038, 26, 14, 134]),
+        pygame.draw.rect(screen, (255, 165, 0), [490, 195, 41, 35]),
+        pygame.draw.rect(screen, (255, 165, 0), [536, 195, 41, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [303, 426, 130, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 334, 214, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [812, 334, 214, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [881, 340, 145, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 340, 145, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 346, 95, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [931, 346, 95, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 352, 49, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [977, 352, 49, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 358, 22, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [1004, 358, 22, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [1021, 328, 5, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [52, 328, 5, 35]),
+        pygame.draw.rect(screen, (0, 0, 0), [30, 160, 18, 92]),
+        pygame.draw.rect(screen, (0, 0, 0), [1023, 160, 30, 92]),
+        pygame.draw.rect(screen, (0, 0, 0), [44, 160, 10, 92]),
+        pygame.draw.rect(screen, (0, 0, 0), [578, 210, 444, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [469, 306, 128, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [469, 400, 128, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [99, 475, 191, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 219, 191, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [831, 219, 191, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 225, 132, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [890, 225, 132, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [474, 312, 117, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [474, 406, 117, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 231, 85, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [937, 231, 85, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [977, 237, 45, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 237, 45, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 243, 16, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [1006, 243, 16, 5]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 210, 434, 8]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 196, 434, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [578, 196, 444, 13]),
+        pygame.draw.rect(screen, (0, 0, 0), [55, 166, 322, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [690, 166, 332, 29]),
+        pygame.draw.rect(screen, (0, 0, 0), [779, 475, 191, 5])
+]
+
+self.draw =  [
+        pygame.draw.rect(screen, (47, 237, 237), [522, 152, 23, 31]),
+        pygame.draw.rect(screen, (50, 205, 50), [30, 30, 17, 116]),
+        pygame.draw.rect(screen, (50, 205, 50), [1021, 30, 17, 116]),
+        pygame.draw.rect(screen, (1, 100, 32), [30, 146, 354, 14]),
+        pygame.draw.rect(screen, (1, 100, 32), [683, 146, 355, 14]),
+        pygame.draw.rect(screen, (255, 255, 255), [690, 181, 332, 1]),
+        pygame.draw.rect(screen, (255, 255, 255), [54, 181, 324, 1])
+]
+
+self.death_zones =  [
+        pygame.draw.rect(screen, (139, 0, 0), [685, 129, 329, 10]),
+        pygame.draw.rect(screen, (139, 0, 0), [685, 32, 10, 98]),
+        pygame.draw.rect(screen, (139, 0, 0), [1004, 32, 10, 98]),
+        pygame.draw.rect(screen, (255, 0, 0), [64, 41, 308, 88]),
+        pygame.draw.rect(screen, (255, 0, 0), [695, 41, 309, 88]),
+        pygame.draw.rect(screen, (139, 0, 0), [65, 41, 10, 86]),
+        pygame.draw.rect(screen, (139, 0, 0), [65, 118, 305, 10]),
+        pygame.draw.rect(screen, (139, 0, 0), [696, 117, 306, 10]),
+        pygame.draw.rect(screen, (139, 0, 0), [360, 41, 10, 86]),
+        pygame.draw.rect(screen, (139, 0, 0), [696, 41, 10, 86]),
+        pygame.draw.rect(screen, (139, 0, 0), [992, 41, 10, 86]),
+        pygame.draw.rect(screen, (194, 57, 33), [77, 48, 281, 67]),
+        pygame.draw.rect(screen, (194, 57, 33), [707, 48, 283, 67]),
+        pygame.draw.rect(screen, (194, 57, 33), [695, 30, 309, 11]),
+        pygame.draw.rect(screen, (194, 57, 33), [64, 30, 309, 11]),
+        pygame.draw.rect(screen, (139, 0, 0), [52, 30, 12, 111]),
+        pygame.draw.rect(screen, (139, 0, 0), [372, 30, 12, 111]),
+        pygame.draw.rect(screen, (139, 0, 0), [683, 30, 12, 111]),
+        pygame.draw.rect(screen, (139, 0, 0), [1004, 30, 12, 111]),
+        pygame.draw.rect(screen, (139, 0, 0), [54, 129, 328, 12]),
+        pygame.draw.rect(screen, (139, 0, 0), [687, 129, 328, 12])
+]
+
+self.win_zones =  [
+        pygame.draw.rect(screen, (47, 237, 237), [531, 194, 5, 36]),
+        pygame.draw.rect(screen, (47, 237, 237), [491, 230, 86, 5])
+]
+
+self.respawn_zones =  [
+]
+
+========================
