@@ -9,4 +9,5 @@
 COMING SOON
 
 ### Credits:
-A game made by @slysnivy and @shoc71
+A game previously made by @slysnivy and @shoc71
+Project kept up to date by @slysnivy
