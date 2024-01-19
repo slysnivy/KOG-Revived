@@ -8,5 +8,6 @@
 ### Keep-On-Going Trailer
 COMING SOON
 
-### Credits:
-A game made by @slysnivy and @shoc71
+### Credits: 
+Project kept up to date by @slysnivy    
+${\color{grey}A \space game \space previously \space worked \space on \space by \space @slysnivy \space and \space @shoc71}$ 
