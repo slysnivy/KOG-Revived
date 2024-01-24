@@ -5,6 +5,8 @@ import math
 import pygame
 import re
 
+from sys import getsizeof
+
 DARK_RED = (139, 0, 0)
 YELLOW = (235, 195, 65)
 BLACK = (0, 0, 0)
@@ -229,9 +231,9 @@ class Memory:
         self.range_index = 0
 
         self.diff_lookup = {
-            0: 0.6,
-            1: 0.8,
-            2: 1.0
+            0: 0,
+            1: 1,
+            2: 2
         }
         """The keys are integers referring to increasing difficulty.
         While their respective values are multipliers for player physics
@@ -404,7 +406,11 @@ class Memory:
 
         # Load images
         self.load_images(folder_path + "images.txt")
-
+        """size_levelset = getsizeof(self.level_set) * getsizeof((311, 167, 1))
+        size_levelelements = getsizeof(self.ls_elements) * (getsizeof((100, 167, 100)) + getsizeof(pygame.Rect(50, 50, 50, 50)) + getsizeof("rect"))
+        print(size_levelset)
+        print(size_levelelements)
+        print(size_levelset + size_levelelements)"""
 
         """
         MenuScene ID = -5
@@ -1287,6 +1293,11 @@ class SquareMe:  # lil purple dude
         # Current height, always 10
         self.color = rgb  # Color of player as static constant or tuple
         self.square_render = None  # Pygame.draw rect of the player
+
+        # Load in player render (png)
+
+        self.player_render = pygame.image.load("assets/images/player/KOGREV_PlayerTest.png").convert_alpha()
+        self.player_render = pygame.transform.scale(self.player_render, [self.width, self.height])
         self.alive = False  # If the player is alive (able to move)
         self.freeze = False  # If the player is forced to pause
 
@@ -1299,11 +1310,11 @@ class SquareMe:  # lil purple dude
         self.max_gravity = 95  # Limit for the gravity loop to iterate
         self.gravity_counter = self.max_gravity  # Counter for gravity loop
         self.diff_factor = diff * res_width
-        # Movement multiplier based on difficulty and resolution sclaing
+        self.diff_counter = 0   # Counter for determining when movement should update
 
         file_path = "assets/audio/sfx/"
         self.jump_sound_1 = pygame.mixer.Sound(file_path + "jump_sfx.wav")
-        # Jump sound for player
+        # Jump sound effect used for player
         self.jump_sound_1.set_volume(0.1 * (jump_vol / 100))  # out of 1 or 100%
         # Jump volume for the player, set at 0.1 out of 1, or 10%
 
@@ -1342,6 +1353,7 @@ class SquareMe:  # lil purple dude
         self.afterimages = []
         # Amount of time before the next after image is made
         self.afterimg_delay = pygame.time.get_ticks()
+        self.time_it = pygame.time.get_ticks()  # Used to diagnose movement timing
 
     def move(self):
         """
@@ -1349,7 +1361,11 @@ class SquareMe:  # lil purple dude
         by the difficulty factor (max of 1 usually)
         """
         # Move horizontally depending on the direction
-        move_factor = (4 * self.direction) * self.diff_factor * self.res_width
+        self.diff_counter += 1
+        if self.diff_counter < self.diff_factor:
+            return None
+
+        move_factor = (3 * self.direction) * self.res_width
         if self.left_x is not None and \
                 self.xpos + move_factor <= self.left_x:
             self.direction = 1
@@ -1368,9 +1384,11 @@ class SquareMe:  # lil purple dude
         self.update_collision_detection()
 
     def update_afterimages(self):
-        # How frequently after_img is animated according to player speed
-        # INT's: 40, 60, 80 - 80 is default
-        effect_factor = 40 / self.diff_factor
+        # How frequently after_img is animated
+        # INT's: 40, 60, 80 - 80 is default, larger is longer for next after_img
+        effect_lookup = {0: 60, 1: 70, 2: 80}
+        effect_factor = effect_lookup[self.diff_factor]
+        effect_dir = {-1: self.width, 1: self.width / 2 * -1, 0: 0}
 
         # Change transparency if it's too solid/opaque initially, default is 125
         transp = 100
@@ -1380,10 +1398,10 @@ class SquareMe:  # lil purple dude
         if len(self.afterimages) < 3 and \
                 effect_factor < pygame.time.get_ticks() - self.afterimg_delay:
             # Transparency goes from 0 (transparent) to 255 (opaque)
-            self.afterimages += [AnimateRect(pygame.Rect(self.xpos,
-                                                         self.ypos,
-                                                         self.width,
-                                                         self.height),
+            self.afterimages += [AnimateRect(pygame.Rect(self.xpos + effect_dir[self.direction],
+                                                         self.ypos + (self.height / 2),
+                                                         self.width / 2,
+                                                         self.height / 2),
                                              self.color,
                                              transp, effect_factor / 10000)]
             self.afterimg_delay = pygame.time.get_ticks()
@@ -1393,7 +1411,7 @@ class SquareMe:  # lil purple dude
             # Check if their transparency is at 0, if so reset
             if rect.transparency <= 0 and \
                     effect_factor < pygame.time.get_ticks() - self.afterimg_delay:
-                rect.update_pos(self.xpos, self.ypos)
+                rect.update_pos(self.xpos + effect_dir[self.direction], self.ypos + (self.height / 2))
                 rect.transparency = 125
                 self.afterimg_delay = pygame.time.get_ticks()
             elif rect.frame_delay < pygame.time.get_ticks() - rect.animate_time:
@@ -1414,10 +1432,15 @@ class SquareMe:  # lil purple dude
         self.bot_col.x = self.xpos
         self.bot_col.y = self.ypos + self.height
 
+        # Should be the last thing executed, after all the movement in self.move() is completed
+        if self.diff_factor < self.diff_counter:
+            self.diff_counter = 0
+            self.time_it = pygame.time.get_ticks()
+
     def jump(self):
         # Jump that will change the player's y position in the game loop
         if self.jump_ability and 0 <= self.jump_boost:
-            jump_factor = ((self.jump_boost ** 2) * 0.002) * self.diff_factor
+            jump_factor = ((self.jump_boost ** 2) * 0.002)
             if self.jump_y is not None and \
                     self.ypos - self.jump_y < jump_factor:
                 self.ypos = self.jump_y
@@ -1428,7 +1451,7 @@ class SquareMe:  # lil purple dude
                 self.ypos -= jump_factor * self.res_height
                 """Change the y position based on the counter and difficulty. This
                 Creates a parabolic relationship from being squared."""
-                self.jump_boost -= 2 * self.diff_factor
+                self.jump_boost -= 2
                 """Decrease the counter until it reaches 0
                 This is used to create the first arc of the jump"""
         else:
@@ -1444,23 +1467,27 @@ class SquareMe:  # lil purple dude
         pygame.draw.rect(screen, BLUE, self.top_col)  # top
         pygame.draw.rect(screen, BLUE, self.bot_col)  # bottom"""
 
+        # Update player afterimages only if moving
+        if not self.freeze and self.alive:
+            self.update_afterimages()
+        # I put this update here since it's only updating the renders
+
+        # Render afterimages
+        for rect in self.afterimages:
+            rect.render(screen)
+
         # Update the square render/rect with the position (x and y)
         self.square_render = pygame.draw.rect(screen, self.color, [self.xpos,
                                                                    self.ypos,
                                                                    self.width,
                                                                    self.height])
 
+        # Render player
+        screen.blit(self.player_render, self.square_render)
+
         # TODO: Test player outline:
         """ pygame.draw.rect(screen, YELLOW, [self.xpos, self.ypos,
                                           self.width, self.height], 1)"""
-
-        # Update player afterimages
-        self.update_afterimages()
-        # I put this update here since it's only updating the renders
-
-        # Render afterimages
-        for rect in self.afterimages:
-            rect.render(screen)
 
     def collision_plat(self, object_list: [pygame.Rect]):
         # Get all the colliding rects with the bottom rect
@@ -1636,8 +1663,7 @@ class SquareMe:  # lil purple dude
     def gravity(self):
         # fix turning off gravity
         if self.enable_gravity and not self.jump_ability:
-            gravity_y = ((self.gravity_counter ** 2) * 0.00015) * \
-                        self.diff_factor * self.res_height
+            gravity_y = ((self.gravity_counter ** 2) * 0.00015) * self.res_height
         else:
             gravity_y = 0
 
@@ -1652,7 +1678,7 @@ class SquareMe:  # lil purple dude
                 self.ypos += gravity_y
 
         if self.gravity_counter < 1100:
-            self.gravity_counter += 2 * self.diff_factor
+            self.gravity_counter += 2
 
     def death(self, death_list: [pygame.Rect]):
         collide_id = self.square_render.collidelist(death_list)

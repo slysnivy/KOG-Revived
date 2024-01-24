@@ -61,7 +61,7 @@ class LevelScene(kogclass.Scene):
         self.y_spawn = y_spawn * level_memory.res_height
         # y spawning location for player
         self.player = kogclass.SquareMe(self.x_spawn, self.y_spawn,
-                                        10, 10, PURPLE,
+                                        30, 30, PURPLE,
                                         level_memory.diff_lookup[
                                             level_memory.diff_value],
                                         level_memory.res_width,
@@ -339,6 +339,7 @@ class LevelScene(kogclass.Scene):
 
         self.player.alive = False
         self.player.freeze = False
+        self.pause = False
         self.deaths += 1
         self.memory.qr_counter = 0
 
@@ -456,7 +457,7 @@ class MenuScene(LevelScene):
                         self.go_to_options,
                         self.go_to_stats, self.go_to_replay,
                         self.go_to_levelzero, self.go_to_instructions] + \
-                       ([self.go_to_filler] * 2)    # filler options 2 times
+                       ([self.go_to_filler] * 2)  # filler options 2 times
         # Main menu options
 
         # Main menu text
@@ -514,7 +515,7 @@ class MenuScene(LevelScene):
                                            YELLOW, None)
         self.title_text_s8.scale(self.memory.res_width, self.memory.res_height)
 
-        file_path = "assets/images/title"
+        file_path = "assets/images/title/"
         self.keep_image_text = pygame.image.load(
             file_path + "Keep.png").convert_alpha()  # ratio is 15:8
         self.on_image_text = pygame.image.load(file_path +
@@ -692,7 +693,7 @@ class HubzonePlayer(kogclass.SquareMe):
 
     def move(self):
 
-        move_factor = (4 * self.direction) * self.diff_factor * self.res_width
+        move_factor = (4 * self.direction) * self.res_width
 
         if self.left_x is not None and \
                 self.xpos + move_factor <= self.left_x:
@@ -1011,7 +1012,7 @@ class OptionsPage(LevelScene):
 
         # Setup select options (so far, difficulty and music)
 
-        self.num_to_diff = {0.6: "Easy", 0.8: "Medium", 1.0: "Hard"}
+        self.num_to_diff = {0: "Hard", 1: "Medium", 2: "Easy"}
         # Difficulties available
 
         self.setting_words = {}
@@ -2143,9 +2144,9 @@ class PlayLevel(LevelSelect, OptionsPage):
                     self.render_objects += [element]
                     # Load up render objects (only rendering, no collision)
         self.display_left = kogclass.Text("Deaths: " + str(self.deaths) +
-                                           ", Jumps: " + str(self.player.jumps),
-                                           [90, 10], 20, "impact", YELLOW,
-                                           None)
+                                          ", Jumps: " + str(self.player.jumps),
+                                          [90, 10], 20, "impact", YELLOW,
+                                          None)
 
         time = kogclass.convert_time(pygame.time.get_ticks() - self.start_time)
         self.display_right = kogclass.Text(kogclass.format_time(time),
@@ -2236,9 +2237,9 @@ class PlayLevel(LevelSelect, OptionsPage):
             LevelScene.update(self)
             # Optimized Text updating
             self.display_left.text = "Deaths: " + \
-                                               str(self.deaths) + \
-                                               ", Jumps: " + \
-                                               str(self.player.jumps)
+                                     str(self.deaths) + \
+                                     ", Jumps: " + \
+                                     str(self.player.jumps)
             self.display_left.setup()
             self.display_left.render()
             time = kogclass.convert_time(pygame.time.get_ticks() -
