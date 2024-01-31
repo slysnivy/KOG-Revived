@@ -1059,23 +1059,23 @@ class OptionsPage(LevelScene):
         for action in pressed:
             # Go through the list of settings the player can change
             if action in [pygame.K_s, pygame.K_DOWN] and \
-                    1200 < pygame.time.get_ticks() - self.menu_buffer:
+                    400 < pygame.time.get_ticks() - self.menu_buffer:
                 self.choose_setting += 1
             elif action in [pygame.K_w, pygame.K_UP] and \
-                    1200 < pygame.time.get_ticks() - self.menu_buffer:
+                    400 < pygame.time.get_ticks() - self.menu_buffer:
                 self.choose_setting -= 1
 
             # Change that selected setting
             if action in [pygame.K_a, pygame.K_LEFT] and \
                     (200 / self.change_speed) < \
                     pygame.time.get_ticks() - self.change_time and \
-                    1200 < pygame.time.get_ticks() - self.menu_buffer:
+                    400 < pygame.time.get_ticks() - self.menu_buffer:
                 self.setting_mem[self.choose_setting] -= 1
                 self.change_time = pygame.time.get_ticks()
             elif action in [pygame.K_d, pygame.K_RIGHT] and \
                     (200 / self.change_speed) < \
                     pygame.time.get_ticks() - self.change_time and \
-                    1200 < pygame.time.get_ticks() - self.menu_buffer:
+                    400 < pygame.time.get_ticks() - self.menu_buffer:
                 self.setting_mem[self.choose_setting] += 1
                 self.change_time = pygame.time.get_ticks()
 
@@ -1098,13 +1098,13 @@ class OptionsPage(LevelScene):
 
         if held[pygame.K_a] and (1000 / self.change_speed) < \
                 pygame.time.get_ticks() - self.change_time and \
-                1200 < pygame.time.get_ticks() - self.menu_buffer:
+                400 < pygame.time.get_ticks() - self.menu_buffer:
             self.setting_mem[self.choose_setting] -= 1
             self.change_time = pygame.time.get_ticks()
 
         elif held[pygame.K_d] and (1000 / self.change_speed) < \
                 pygame.time.get_ticks() - self.change_time and \
-                1200 < pygame.time.get_ticks() - self.menu_buffer:
+                400 < pygame.time.get_ticks() - self.menu_buffer:
             self.setting_mem[self.choose_setting] += 1
             self.change_time = pygame.time.get_ticks()
 
