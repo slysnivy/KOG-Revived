@@ -231,9 +231,9 @@ class Memory:
         self.range_index = 0
 
         self.diff_lookup = {
-            0: 0,
+            0: 2,
             1: 1,
-            2: 2
+            2: 0
         }
         """The keys are integers referring to increasing difficulty.
         While their respective values are multipliers for player physics
